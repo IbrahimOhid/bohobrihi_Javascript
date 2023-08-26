@@ -246,4 +246,63 @@
 // His name is Ibrahim
 // His age is 27
 // His Date of Birth is 5 May, 1997
+
 // Template literals (ES6) end
+
+//if statement start
+// var num1 = parseInt(prompt("Enter first Number:"));
+// var num2 = parseInt(prompt("Enter second Number:"));
+// var num3 = parseInt(prompt("Enter third Number:"));
+
+// if(num1 >= num2 && num1 >= num3){
+//     console.log(num1 + "Largest Number")
+// }
+// else if(num2 >= num1 && num2 >= num3){
+//     console.log(num2 + "Second Largent Number")
+// }
+// else{
+//     console.log(num3 + "Small Number")
+// }
+// var result = parseInt(prompt("Enter a Number"));
+// if(result <= 100 && result >= 80){
+//     console.log("A+");
+// }
+// else if(result <= 79 && result >=70){
+//     console.log("A");
+// }
+// else if(result <= 69 && result >= 60){
+//     console.log("A-")
+// }
+// else if(result <= 59 && result >= 50){
+//     console.log("B+")
+// }
+// else if(result <= 49 && result >= 40){
+//     console.log("B")
+// }
+// else if(result <= 39 && result >= 33){
+//     console.log("C")
+// }
+// else{
+//     console.log("F")
+// }
+//if statement end
+
+//switch statement start 
+// var letter = prompt("Enter input (a - c) Letter: ");
+
+// switch(letter){
+//     case "a":
+//         console.log("Option a selected");
+//         break;
+//         case "b":
+//             console.log("Option b Selected");
+//             break;
+//             case "c":
+//                 console.log("Option C Selected");
+//                 break;
+//                 default:
+//                     console.log("No option selected");
+// }
+
+
+//switch statement end
