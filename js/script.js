@@ -304,5 +304,56 @@
 //                     console.log("No option selected");
 // }
 
-
 //switch statement end
+
+//while loop
+
+// var i = 1;
+// var sum = 0;
+
+// while(i <= 10){
+//     sum = sum + i;
+//     i++;
+// }
+
+// console.log(sum);
+
+//for loop
+
+// for(i = 1; i <= 5; i++){
+//     console.log(i);
+// }
+
+// for (i = 5; i >= 1; i--){
+//     console.log(i);
+// }
+
+//break statement
+
+// for (i = 1; i <= 5; i++){
+//     if(i == 3){
+//         break;
+//     }
+//     console.log(i);
+    
+// }
+
+// for(i = 1; i <= 10; i++){
+//     if(i % 2 == 1){
+//         continue;
+//     }
+//     console.log(i);
+// }
+
+// let name = "Mohammad";
+// for(i = 0; i <= 7; i++){
+//     console.log(`index of: ${i}`)
+//     console.log(name[i]);
+// }
+
+let name = "Mohammad Ibrahim";
+let len = name.length;
+for (i = 0; i < len; i++){
+    console.log(`index: ${i}`);
+    console.log(name[i]);
+}
