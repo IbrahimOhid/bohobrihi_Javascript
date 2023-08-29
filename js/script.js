@@ -351,9 +351,101 @@
 //     console.log(name[i]);
 // }
 
-let name = "Mohammad Ibrahim";
-let len = name.length;
-for (i = 0; i < len; i++){
-    console.log(`index: ${i}`);
-    console.log(name[i]);
+// let name = "Mohammad Ibrahim";
+// let len = name.length;
+// for (i = 0; i < len; i++){
+//     console.log(`index: ${i}`);
+//     console.log(name[i]);
+// }
+
+
+// let name = "Mohammad Ibrahim Ohid";
+
+// for(var x in name){
+//     console.log(`index ${x} and item ${name[x]}`);
+// }
+
+// let name = "Ibrahim";
+// for(var x of name){
+//     console.log(x);
+// }
+// let food = ["apple", "cake", "orange"];
+
+// for (var x in food){
+//     console.log(x);
+// }
+
+// let food = ["apple", "cake", "orange"];
+
+// for (var x in food){
+//     console.log(`index: ${x}; and item: ${food[x]}`);
+// }
+
+// var num = parseInt(prompt("Enter a Number: "));
+
+// for(i = 1; i<= num; i++){
+//     console.log(i*i);
+// }
+
+//function start
+
+// function saySomething(){
+//     console.log("Mohammad");
+//     console.log("Ibrahim");
+//     console.log("ohid");
+// }
+// saySomething();
+// console.log("======");
+// saySomething();
+
+// saySomething();
+// console.log("Ohid");
+
+// function saySomething(){
+//     console.log("Mohammad Ibrahim");
+// }
+
+// function saySomething(){
+//     alert("Hello Bangladesh");
+// }
+// saySomething();
+
+// function saySomething(para1){
+//     console.log(`Hello ${para1} ?`);
+// }
+//     saySomething("Ibrahim");
+
+// function saySomething(para1){
+//     console.log(`Hello ${para1}`);
+// }
+//     let name = "Ibrahim";
+//     saySomething(name);
+
+// function myName(fname, lname){
+//     console.log(`Hello ${fname} ${lname} Bodda!`)
+// }
+// let fname = "Mohammad";
+// let lname = "Ibrahim";
+// myName(fname, lname);
+
+// function studentNum(a, b){
+//     console.log(`${a} + ${b} = ${a +  b}`)
+//     return(a-b);
+// }
+// let num = studentNum(4, 3);
+// console.log(num);
+
+// let fullName = function(){
+//     console.log("Mohammad Ibrahim");
+// }
+// fullName();
+
+// let myName = function(name){
+//     console.log(`Hello ${name}`);
+// }
+// myName("Ibrahim");
+
+let myCode = (code1, code2) => {
+    console.log(`I love   ${code1} and ${code2}`)
 }
+myCode("Javascript", "ES6")
