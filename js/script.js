@@ -445,7 +445,72 @@
 // }
 // myName("Ibrahim");
 
-let myCode = (code1, code2) => {
-    console.log(`I love   ${code1} and ${code2}`)
-}
-myCode("Javascript", "ES6")
+// let myCode = (code1, code2) => {
+//     console.log(`I love   ${code1} and ${code2}`)
+// }
+// myCode("Javascript", "ES6")
+
+//array forEach start ⤵
+// 1st Parameter : Item
+// 2nd Parameter : Index
+// 3rd Parameter : Whole Array
+
+// let food = ["cake", "biscuit", "ice cream", "honey"];
+
+
+// // food.forEach(function(item,index, array,){
+// //     // console.log(item);
+// //     // console.log(index);
+// //     // console.log(array);
+// //     console.log(`index: ${index}, item: ${item}, arry: ${array}`);
+// // })
+
+// let allPrint = function(item, index, array){
+//     console.log(`index: ${index}, item: ${item}, arry: ${array}`);
+// }
+// food.forEach(allPrint);
+
+//array mapping start ⤵
+let food = ["cake", "biscuit", "ice cream", "honey"];
+let num = [1, 33, 32, 11];
+
+// function addAll(item){
+//     return `${item} is a food`
+// }
+// let add_food = food.map(addAll);
+// console.log(add_food);
+
+// function allNum(addNum){
+//     return `${addNum}*${addNum}`;
+// }
+// let squareNum = num.map(allNum);
+// console.log(squareNum);
+
+//object Method ⤵
+
+// let person = {name: "Ibrahim", lastName: "ohid", age: 25,
+//                 fullName: function(){
+//                     return `${this.name} ${this.lastName}`;
+//                 }
+//             };
+// console.log(person.fullName());
+
+//math object ⤵
+
+let val;
+val = Math.PI;
+val = Math.E;
+val = Math.round(3.5);
+val = Math.ceil(1.2);
+val = Math.floor(3.9);
+val = Math.sqrt(49);
+val = Math.abs(-8);
+val = Math.pow(3, 5);
+val = Math.min(2, 3, 5, 9);
+val = Math.max(3, 8, 1, 11, 0,);
+val = Math.random();
+val = Math.random() * 10;
+val = Math.floor(Math.random() * 88); 
+
+
+console.log(val);
