@@ -335,7 +335,7 @@
 //         break;
 //     }
 //     console.log(i);
-    
+
 // }
 
 // for(i = 1; i <= 10; i++){
@@ -497,20 +497,90 @@ let num = [1, 33, 32, 11];
 
 //math object ⤵
 
-let val;
-val = Math.PI;
-val = Math.E;
-val = Math.round(3.5);
-val = Math.ceil(1.2);
-val = Math.floor(3.9);
-val = Math.sqrt(49);
-val = Math.abs(-8);
-val = Math.pow(3, 5);
-val = Math.min(2, 3, 5, 9);
-val = Math.max(3, 8, 1, 11, 0,);
-val = Math.random();
-val = Math.random() * 10;
-val = Math.floor(Math.random() * 88); 
+// let val;
+// val = Math.PI;
+// val = Math.E;
+// val = Math.round(3.5);
+// val = Math.ceil(1.2);
+// val = Math.floor(3.9);
+// val = Math.sqrt(49);
+// val = Math.abs(-8);
+// val = Math.pow(3, 5);
+// val = Math.min(2, 3, 5, 9);
+// val = Math.max(3, 8, 1, 11, 0,);
+// val = Math.random();
+// val = Math.random() * 10;
+// val = Math.floor(Math.random() * 88); 
 
 
-console.log(val);
+// console.log(val);
+
+//Date Object
+
+// let val;
+// today = new Date();
+// let birthday = new Date(`08-07-1997 12:07:33`);
+// val = today;
+// val = today.toString();
+// val = birthday.toString();
+// val = today.getMonth();
+// val = today.getDay();
+// val = today.getFullYear();
+// val = today.getHours();
+// val = today.getMinutes();
+// val = today.getSeconds();
+// val = today.getMilliseconds();
+// val = today.getTime();
+// // console.log(val);
+
+//Global Scope
+
+// var a = 1;
+// let b = 2;
+// const c = 3;
+
+// console.log(`Global Scope: `, a, b, c);
+
+// function test() {
+//     var a = 4;
+//     let b = 5;
+//     const c = 6
+//     console.log(`Function Scope: `, a, b, c);
+// }
+// test();
+
+// console.log(`Global Scope: `, a, b, c);
+
+
+// if(true){
+//     var a = 7;
+//     let b = 8;
+//     const c = 9;
+//     console.log(`if Scope: `, a, b, c);
+// }
+
+// console.log(`Global Scope: `, a, b, c);
+
+// for (let a = 1; a < 10; a++){
+//     console.log(`for scope: `, a);
+// }
+// console.log(`Global Scope: `, a, b, c);
+
+//javascript classes (ES6)
+
+class person {
+    constructor (fname, lname, birthday){
+        this.firstName = fname,
+        this.lastName = lname,
+        this.dob = birthday
+    }
+}
+
+let person1 = new person("Mohammad", "Ibrahim", "07-05-1997");
+let person2 = new person("Ebna", "Osman", "02-02-2001");
+let person3 = new person("rafiya", "kawser", "02-02-2001");
+
+
+console.log(person1);
+console.log(person2);
+console.log(person3);
