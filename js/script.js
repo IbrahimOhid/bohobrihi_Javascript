@@ -568,19 +568,119 @@ let num = [1, 33, 32, 11];
 
 //javascript classes (ES6)
 
-class person {
-    constructor (fname, lname, birthday){
-        this.firstName = fname,
-        this.lastName = lname,
-        this.dob = birthday
-    }
+// class person {
+//     constructor (fname, lname, birthday){
+//         this.firstName = fname,
+//         this.lastName = lname,
+//         this.dob = birthday
+//     }
+// }
+
+// let person1 = new person("Mohammad", "Ibrahim", "07-05-1997");
+// let person2 = new person("Ebna", "Osman", "02-02-2001");
+// let person3 = new person("rafiya", "kawser", "02-02-2001");
+
+
+// console.log(person1);
+// console.log(person2);
+// console.log(person3);
+
+
+// function allNum(num1, num2){
+//     var result = num1 * num2;
+//     document.write( `${num1} * ${num2}`+ "= " + result + "<br>");
+// }
+// allNum(5,6);
+// allNum(10, 3);
+
+// //add function
+// function addition(a,b){
+//     var result = a + b;
+//     document.write(`${a} + ${b} `+ "= " + result + "<br>")
+// }
+
+// // sub function
+// function subtraction(a,b){
+//     var result = a - b;
+//     document.write(`${a} - ${b} ` + "= " + result + "<br>");
+// }
+
+// function into(a,b){
+//     var result = a * b;
+//     document.write(`${a} * ${b} ` + "= " + result + "<br>");
+// }
+
+// function vag(a,b){
+//     var result = a / b;
+//     document.write(`${a} / ${b} ` + "= " + result + "<br>")
+// }
+
+
+// addition(3,2);
+// subtraction(10,2);
+// into(8, 22);
+// vag(120, 60);
+
+// function display(){
+//     document.write("Hello");
+// }
+// display();
+
+// (function display(hello){
+//     document.write(hello)
+// })("Bangladesh");
+
+// (function add(num1, num2){
+//     sum = num1 + num2;
+//     document.write(`${num1} + ${num2} ` + "= " + sum + "<br>");
+// })(10, 20);
+
+
+
+// var sub = function subtraction(num1 , num2){
+//     result = num1 - num2;
+//     document.write(result);
+// }
+// sub(30,3)
+
+//array
+
+// var names = ["MOhammd", "Ibrahim", "Ohid", "Ebna", "Osman"];
+// names.push("Jisan");
+// names.pop();
+// names.unshift("Bhai");
+// names.shift();
+// document.write(names);
+
+// var country1 = ["Bangladesh", "Pakistan", "Oman"];
+// var country2 = ["America", "Afganistan", "Nepal"];
+
+// var allCountries = country1.concat(country2);
+// document.write(allCountries);
+
+// var number = [1, 33, 33, 44, 55, 88];
+
+// for(var i = 0; i < 6; i++){
+//     document.write(number[i]);
+// }
+
+// var number = [10, 20, 30, 40];
+// var sum = 0;
+
+// for (var i = 0; i < 4; i++){
+//     sum = sum + number[i];
+    
+// }
+// document.write(sum);
+
+var number10 = new Array();
+
+for (var i = 0; i < 5; i++){
+    number10[i] = parseInt(prompt("Enter a Number"));
 }
 
-let person1 = new person("Mohammad", "Ibrahim", "07-05-1997");
-let person2 = new person("Ebna", "Osman", "02-02-2001");
-let person3 = new person("rafiya", "kawser", "02-02-2001");
-
-
-console.log(person1);
-console.log(person2);
-console.log(person3);
+var sum = 0;
+for (var i = 0; i < 5; i++){
+    sum = sum + number10[i];
+}
+document.write("Sum = " + sum);
