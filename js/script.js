@@ -669,18 +669,183 @@ let num = [1, 33, 32, 11];
 
 // for (var i = 0; i < 4; i++){
 //     sum = sum + number[i];
-    
+
 // }
 // document.write(sum);
 
-var number10 = new Array();
+// var number10 = new Array();
 
-for (var i = 0; i < 5; i++){
-    number10[i] = parseInt(prompt("Enter a Number"));
-}
+// for (var i = 0; i < 5; i++){
+//     number10[i] = parseInt(prompt("Enter a Number"));
+// }
 
-var sum = 0;
-for (var i = 0; i < 5; i++){
-    sum = sum + number10[i];
-}
-document.write("Sum = " + sum);
+// var sum = 0;
+// for (var i = 0; i < 5; i++){
+//     sum = sum + number10[i];
+// }
+// document.write("Sum = " + sum);
+
+// var addition = new Array();
+// for(var i = 0; i < 5; i++){
+//     addition[i] = parseInt(prompt("Enter a Number"));
+// }
+
+// var sum = 0;
+
+// for (var i = 0; i < 5; i++){
+//     sum = sum + addition[i];
+
+// }
+// document.write("Sum = " + sum);
+
+// var names = ["Mohammad", "Ibrahim", "Ohid", "Rafiya", "Kawser"];
+// for (var i = 0; i < 5; + i++){
+//     console.log(names[i]);
+// }
+//1D Array
+// function hightScore(score) {
+//     var max = number[0];
+//     for (var i = 1; i < number.length; i++){
+//         if(max < number[i]){
+//             max = number[i];
+//         }
+//     }
+//     return max;
+// }
+// var number = [120, 22, 33, 40, 99, 1];
+// var maxNumber = hightScore(number);
+// console.log(maxNumber);
+
+// class (ES6)
+
+// class Person {
+//     constructor(fname, lname, birthday){
+//         this.firstName = fname;
+//         this.lastName = lname;
+//         this.bod = birthday;
+//     }
+// }
+
+// let person1 = new Person("Mohammad", "Ibrahim", "07-05-1997");
+// let person2 = new Person("Rahim", "Ullah", "04-05-1999");
+// let person3 = new Person("Rafiya", "Akter", "06-07-2002");
+
+// console.log(person1);
+// console.log(person2);
+// console.log(person3);
+
+// function Person (fname, lname, age, eye){
+//     this.firstName = fname;
+//     this.lastName = lname;
+//     this.age = age;
+//     this.eyeColor = eye;
+// }
+// let person1 = new Person ("Mohammad", "Ibrahim", "77", "Blue");
+// console.log(person1);
+
+// function Person(fname, lname,age, eye){
+//     this.firstName = fname;
+//     this.lastName  = lname;
+//     this.age = age;
+//     this.eyeColor = eye;
+
+//     this.fullName = function (){
+//         return this.firstName + " " + this.lastName;
+//     }
+// }
+
+// let person1 = new Person("Mohammad", "Ibrahim", "25", "Black");
+// console.log(person1.fullName());
+
+// class Person {
+//     constructor(fname, lname) {
+//         this.firstName = fname;
+//         this.lastName = lname;
+//     }
+//     fullName() {
+//        return `${this.firstName} ${this.lastName}`;
+//     }
+// }
+// class Customer extends Person{
+//     constructor(fname,lname,phone,membership){
+//         super(fname,lname);
+//         this.phone = phone;
+//         this.membership = membership;
+//     }
+// }
+
+// let person1 = new Person("Mohammad", "Ibrahim");
+// let customer = new Customer("Ebna", "Osman", "083333", "2332");
+
+// console.log(person1);
+// console.log(person1.fullName());
+// console.log(customer);
+// console.log(customer.fullName());
+
+//static function
+
+// class Person{
+//     constructor(fname, lname){
+//         this.firstName = fname;
+//         this.lastName = lname;
+//     }
+//     static text(){
+//         console.log("I am Mohammad Ibrahim Ohid");
+//     }
+// }
+
+// let person1 = new Person("Mohammad", "Ibrahim");
+// console.log(person1);
+// console.log(Person.text());
+
+// object
+// var student = {
+//     fname: "Mohammad",
+//     lname: "Ibrahim",
+//     age: "26",
+//     lang: ["Bangla", "English", "Urdu"]
+// }
+// console.log(student.lname);
+
+// function Student(name, age, cgpa, lang){
+//     this.fullName = name;
+//     this.age = age;
+//     this.cgpa = cgpa;
+//     this.language = lang;
+// }
+
+// let student1 = new Student("MOhammad", "26", "3.05", ["Bangali", "English", "Urdu"]);
+// console.log(student1.language);
+
+// function Student(fname, lname, cgpa, lang){
+//     this.fname = fname;
+//     this.lname = lname;
+//     this.cgpa = cgpa;
+//     this.lang = lang;
+
+//     this.display = function() {
+//         console.log(this.fname);
+//         console.log(this.lname);
+//         console.log(this.cgpa);
+//         console.log(this.lang);
+//     }
+// }
+
+// let student1 = new Student("Mohammad", "Ibrahim", "3.22", ["Bangla", "English", "Urdu"]);
+// let student2 = new Student("Ebna", "Osman", "3.22", ["Bangla", "English", "Urdu"]);
+
+// student1.display();
+// student2.display();
+  
+
+// var num1 = parseInt(prompt("Enter a Number 1"));
+// var num2 = parseInt(prompt("Enter a Number 2"));
+// var num3 = parseInt(prompt("Enter a Number 3"));
+
+// var maximum = Math.max(num1, num2, num3);
+// var minimum = Math.min(num1, num2, num3);
+
+// document.write("Maximum Number = " + maximum + "<br>");
+// document.write("Maximum Number = " + minimum);
+
+Math.floor(Math.random() * 6) + 2;
