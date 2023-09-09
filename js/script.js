@@ -836,7 +836,7 @@ let num = [1, 33, 32, 11];
 
 // student1.display();
 // student2.display();
-  
+
 
 // var num1 = parseInt(prompt("Enter a Number 1"));
 // var num2 = parseInt(prompt("Enter a Number 2"));
@@ -848,4 +848,58 @@ let num = [1, 33, 32, 11];
 // document.write("Maximum Number = " + maximum + "<br>");
 // document.write("Maximum Number = " + minimum);
 
-Math.floor(Math.random() * 6) + 2;
+// Math.floor(Math.random() * 6) + 2;
+
+// Guessing Game
+
+// var guessNumber = parseInt(prompt("Enter a number from 1 to 5"));
+
+// var randomNumber = Math.floor(Math.random() * 5) + 1;
+
+// if(guessNumber == randomNumber){
+//     console.log("Youe Have Won")
+// }else{
+//     console.log("You Have localStorage. Random number was " + randomNumber);
+// }
+// var wonNum = 0;
+// var lostNum = 0;
+// for (var i = 1; i <= 5; i++) {
+//     var guessNumber = parseInt(prompt("Enter a Number from 1 to 5"));
+//     var randomNumber = Math.floor(Math.random() * 5) + 1;
+
+//     if (guessNumber == randomNumber) {
+//         console.log("You Have Won");
+//         wonNum++;
+//     } else{
+//         console.log("You Have lost. Random number was " + randomNumber);
+//         lostNum++;
+//     }
+// }
+
+// document.write("Total Won = " + wonNum + "<br>");
+// document.write("Total Loss = " + lostNum);
+
+//Date Object
+// var date = new Date();
+// console.log(date);
+
+// var year = date.getFullYear();
+// console.log(year);
+
+// var month = date.getMonth();
+// console.log(month);
+
+// var currDate = date.getDate();
+// console.log(currDate);
+
+//DOM
+
+// var myHeading = document.getElementById("heading1");
+// myHeading.innerHTML = "Ibrahim Ohid";
+
+// document.getElementById("para").innerHTML = "MOhammad";
+
+// document.getElementsByTagName("h1")[1].innerHTML = "MOhammad Ibrahim";
+// document.getElementsByClassName("para1")[0].innerHTML = "I am a Web Developer";
+
+document.getElementById("title").innerHTML = "My Skills";
