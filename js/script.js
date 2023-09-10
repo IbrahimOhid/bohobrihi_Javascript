@@ -902,4 +902,25 @@ let num = [1, 33, 32, 11];
 // document.getElementsByTagName("h1")[1].innerHTML = "MOhammad Ibrahim";
 // document.getElementsByClassName("para1")[0].innerHTML = "I am a Web Developer";
 
-document.getElementById("title").innerHTML = "My Skills";
+// document.getElementById("title").style.background = "pink";
+// document.getElementById("title").style.color = "green";
+// document.getElementById("title").style.padding = "20px";
+
+//query selector 
+// document.querySelector("#title").innerHTML = "Hello Bangladesh";
+
+// document.querySelector(".name").style.background = "green";
+// document.querySelector(".name").style.color = "white";
+// val = document.querySelector("ol li:last-child");
+// val.style.background = "cyan";
+// val.style.color = "white";
+
+// val = document.querySelector("ul li:nth-child(2)");
+// val.style.background = "hotpink";
+// val.style.color = "white";
+// val.style.padding = "10px";
+
+// document.querySelector("#para1").innerHTML = "I love Bangladesh";
+
+// document.querySelectorAll("ol li")[0].innerHTML = "React";
+// document.querySelectorAll("ul li")[3].style.background = "cyan";
