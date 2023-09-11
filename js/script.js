@@ -924,3 +924,154 @@ let num = [1, 33, 32, 11];
 
 // document.querySelectorAll("ol li")[0].innerHTML = "React";
 // document.querySelectorAll("ul li")[3].style.background = "cyan";
+
+let olItem = document.createElement('li');
+olItem.className = "React";
+// olItem.id = "React baba";
+// olItem.setAttribute("title", "React is good");
+// olItem.appendChild(document.createTextNode("React"));
+// document.querySelector("ol").appendChild(olItem);
+
+// console.log(olItem);
+
+// let ulItem = document.createElement("li");
+// ulItem.className = "Linkedin";
+// ulItem.id = "Linkedin Baba";
+// ulItem.setAttribute("title", "Linkedin is Good");
+// ulItem.appendChild(document.createTextNode("Linkedin"));
+// document.querySelector("ul").appendChild(ulItem);
+// console.log(ulItem);
+
+// let newHeading = document.createElement("h1");
+// newHeading.appendChild(document.createTextNode("I Love Bangladesh"));
+
+// let oldHeading = document.querySelector("h1");
+
+// let parent = document.querySelector(".container");
+// parent.replaceChild(newHeading, oldHeading);
+
+// console.log(newHeading);
+// console.log(parent);
+
+// let list = document.querySelector("ul li:nth-child(1)");
+
+// list.classList.add("ohid");
+// console.log(list);
+
+// document.getElementById("btn-1").addEventListener("click", ohid);
+
+// function ohid(){
+//     document.write("Mohammad Ibrahim");
+// }
+
+// document.getElementById("btn-1").addEventListener("dblclick", ibrahim);
+
+// function ibrahim(){
+//     document.write("Mohammad Ibrahim");
+// }
+// var para = document.querySelector("#para");
+// function button1() {
+//     para.innerHTML = "I am Button1";
+// }
+// function button2() {
+//     para.innerHTML = "I am Button2";
+// }
+
+// var picture = document.querySelector("#picture1");
+// function picture1(){
+//     picture.src = "/img/CSDU Family.jpg"
+// }
+// function picture2(){
+//     picture.src = "/img/CSDU Logo Design White BG-01.jpg"
+// }
+
+// var button = document.querySelector("#para");
+// function button1 () {
+//     button.innerHTML = "I am button1";
+// }
+// function button2 () {
+//     button.innerHTML = "i am button2"
+// }
+
+// var image = document.querySelector("#img1");
+// function picture1() {
+//     image.src = "/img/CSDU Family.jpg";
+// }
+
+// function picture2() {
+//     image.src = "/img/CSDU Logo Design White BG-01.jpg";
+// }
+
+// var link = document.getElementsByTagName("a")[3];
+// link.innerHTML = "Ibrahimohid";
+// link.style.background = "blue";
+// link.style.textDecoration = "none";
+// link.style.color = "#ffff";
+// link.style.padding = "10px";
+// link.style.fontSize = "19px";
+// link.href = "https://studywithanis.com";
+
+// console.log(link);
+
+// var heading = document.getElementsByTagName("h1")[0];
+// heading.innerHTML = "Pakistan";
+// console.log(heading);
+
+// var heading0 = document.createElement("h1");
+// var text = document.createTextNode("Hello World!");
+// heading0.insertBefore(text);
+
+// var mydiv = document.querySelector("#contianer");
+// mydiv.insertBefore(heading0);
+
+// const studentList = document.querySelector(".student-list");
+// const studentA = studentList.children[2]; 
+
+// console.log(studentA);
+
+// const studentList = document.querySelector("li");
+// const studentAll = studentList.parentElement;
+// console.log(studentAll);
+
+// var photos = ["/img/1.png", "/img/2.png", "/img/3.png"];
+// var imgTag = document.querySelector("img");
+
+// var count = 0;
+
+// function next() {
+//     count++;
+//     if (count >= photos.length) {
+//         count = 0;
+//         imgTag.src = photos[count];
+//     } else {
+//         imgTag.src = photos[count];
+//     }
+// }
+
+// function prev() {
+//     count--;
+//     if (count < 0) {
+//         count = photos.length - 1;
+//         imgTag.src = photos[count];
+//     } else {
+//         imgTag.src = photos[count];
+//     }
+// }
+
+// function addStyle(){
+//     var myPara = document.querySelector("#para");
+//     myPara.classList.add("para");
+// }
+
+// function removeStyle(){
+//     var myPara = document.querySelector("#para");
+//     myPara.classList.remove("para");
+// }
+var mypara = document.querySelector("#para");
+function addStyle(){
+    mypara.classList.add("para");
+}
+
+function removeStyle(){
+    mypara.classList.remove("para");
+}
