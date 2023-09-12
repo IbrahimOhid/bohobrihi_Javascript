@@ -1067,11 +1067,77 @@ olItem.className = "React";
 //     var myPara = document.querySelector("#para");
 //     myPara.classList.remove("para");
 // }
-var mypara = document.querySelector("#para");
-function addStyle(){
-    mypara.classList.add("para");
-}
+// var mypara = document.querySelector("#para");
+// function addStyle(){
+//     mypara.classList.add("para");
+// }
 
-function removeStyle(){
-    mypara.classList.remove("para");
+// function removeStyle(){
+//     mypara.classList.remove("para");
+// }
+//var photos = ["/img/1.png", "/img/2.png", "/img/3.png"];
+// var myTag = document.querySelector("img");
+
+// var count = 0;
+// function next(){
+// count++;
+
+// if(count >= photos.length){
+//     count = 0;
+//     myTag.src = photos[count];
+// }else{
+//     myTag.src = photos[count];
+// }
+// }
+
+// function prev(){
+//     count--;
+//     if(count < 0){
+//         count = photos.length -1;
+//         myTag.src = photos[count];
+//     }else{
+//         myTag.src = photos[count];
+//     }
+// }
+
+// document.querySelector("button").addEventListener("click", function(){
+//     alert("Ibrahim OHid");
+// })
+
+// var heading = document.querySelector("h1");
+
+// heading.addEventListener("mouseover", function(){
+//     heading.classList.add("heading");
+// })
+
+// heading.addEventListener("mouseout", function(){
+//     heading.classList.remove("heading");
+// })
+
+// var para1 = document.querySelector("p");
+
+// function click1(){
+//     para1.classList.add("para");
+// }
+
+// var button1 = document.querySelector(".btn1");
+// var button2 = document.querySelector(".btn2");
+// var button3 = document.querySelector(".btn3");
+// button1.addEventListener("click", function(){
+//     document.querySelector("h1").innerHTML = "Red Button Clicked";
+// });
+
+// button2.addEventListener("click", function(){
+//     document.querySelector("h1").innerHTML = "Blue Button Clicked";
+// });
+
+// button3.addEventListener("click", function(){
+//     document.querySelector("h1").innerHTML = "Orange Button Clicked";
+// });
+var len = document.querySelectorAll(".btn").length;
+for( var i = 0; i < len; i++){
+    document.querySelectorAll(".btn")[i].addEventListener("click", function(){
+        var text = this.innerHTML;
+        document.querySelector("h1").innerHTML = text 
+    })
 }
