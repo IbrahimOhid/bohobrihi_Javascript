@@ -1134,10 +1134,28 @@ olItem.className = "React";
 // button3.addEventListener("click", function(){
 //     document.querySelector("h1").innerHTML = "Orange Button Clicked";
 // });
-var len = document.querySelectorAll(".btn").length;
-for( var i = 0; i < len; i++){
+for (i = 0; i < 3; i++){
     document.querySelectorAll(".btn")[i].addEventListener("click", function(){
         var text = this.innerHTML;
-        document.querySelector("h1").innerHTML = text 
-    })
+        myBtn(text);
+    });
+}
+
+function myBtn(text){
+    switch(text){
+        case "a":
+        var audio = new Audio("/sound/Letter_a.mp3");
+        audio.play();
+        break;
+
+        case "c":
+        var audio = new Audio("/sound/Letter_b.mp3");
+        audio.play();
+        break;
+
+        case "d":
+        var audio = new Audio("/sound/Letter_c.mp3");
+        audio.play();
+        break;
+    }
 }
