@@ -1134,28 +1134,75 @@ olItem.className = "React";
 // button3.addEventListener("click", function(){
 //     document.querySelector("h1").innerHTML = "Orange Button Clicked";
 // });
-for (i = 0; i < 3; i++){
-    document.querySelectorAll(".btn")[i].addEventListener("click", function(){
-        var text = this.innerHTML;
-        myBtn(text);
-    });
-}
 
-function myBtn(text){
-    switch(text){
-        case "a":
-        var audio = new Audio("/sound/Letter_a.mp3");
-        audio.play();
-        break;
+// for (i = 0; i < 5; i++) {
+//     document.querySelectorAll(".btn")[i].addEventListener("click", function () {
+//         var text = this.innerHTML;
+//         audioPlay(text);
+//         selectButton(text);
+//     })
+// }
 
-        case "c":
-        var audio = new Audio("/sound/Letter_b.mp3");
-        audio.play();
-        break;
+// function audioPlay(text) {
+//     switch (text) {
+//         case "a":
+//             var audio = new Audio("/sound/Letter_a.mp3");
+//             audio.play();
+//             break;
+//         case "b":
+//             var audio = new Audio("/sound/Letter_B.mp3");
+//             audio.play();
+//             break;
+//         case "c":
+//             var audio = new Audio("/sound/Letter_c.mp3");
+//             audio.play();
+//             break;
+//         case "d":
+//             var audio = new Audio("/sound/Letter_D.mp3");
+//             audio.play();
+//             break;
+//         case "e":
+//             var audio = new Audio("/sound/Letter_e.mp3");
+//             audio.play();
+//             break;
+//     }
+// }
 
-        case "d":
-        var audio = new Audio("/sound/Letter_c.mp3");
-        audio.play();
-        break;
-    }
-}
+// function selectButton(text){
+//     var selectBtn = document.querySelector("." + text);
+//     selectBtn.classList.add("btnani");
+
+//     setTimeout( function(){
+//         selectBtn.classList.remove("btnani");
+//     },1000);
+// }
+
+// document.addEventListener("keypress", function(event){
+//     var text = event.key;
+//     audioPlay(text);
+//     selectButton(text);
+// })
+
+// document.addEventListener("keypress", function(event){
+//     var text = event.key;
+//     document.querySelector("p").innerHTML = "You Have Pressed : " + text;
+// })
+
+// var count = 0;
+// document.querySelector("textarea").addEventListener("keypress", function(event){
+//     count++;
+//     var text = event.key;
+//     document.querySelector("p").innerHTML = "You Have Pressed: " + count;
+// })
+
+// var input = document.querySelector("input[name=Name]");
+// input.addEventListener("change", inputChange);
+
+// function inputChange(e) {
+//     // console.log(e);
+//     //console.log(e.type);
+//     //console.log(e.target);
+//     //console.log(e.target.id);
+//     //console.log(e.target.className);
+//     //console.log(e.target.value);
+// }
