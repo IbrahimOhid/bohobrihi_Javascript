@@ -1237,25 +1237,61 @@ olItem.className = "React";
 //     console.log(e.target.value);
 // }
 
-const form = document.querySelector("form");
-const name = form.querySelector("div #name");
-const email = form.querySelector("div #email");
-const password = form.querySelector("div #password");
+// const form = document.querySelector("form");
+// const name = form.querySelector("div #name");
+// const email = form.querySelector("div #email");
+// const password = form.querySelector("div #password");
 
-form.addEventListener("submit", submitHandeler);
+// form.addEventListener("submit", submitHandeler);
 
-function submitHandeler(e) {
-    e.preventDefault();
-    // console.log(name.value);
-    // console.log(email.value);
-    // console.log(password.value);
-    const userInfo = {
-        name: name.value,
-        email: email.value,
-        password: password.value,
-    }
-    console.log(userInfo);
-    name.value = "";
-    email.value = "";
-    password.value = "";
-}
+// function submitHandeler(e) {
+//     e.preventDefault();
+//     // console.log(name.value);
+//     // console.log(email.value);
+//     // console.log(password.value);
+//     const userInfo = {
+//         name: name.value,
+//         email: email.value,
+//         password: password.value,
+//     }
+//     console.log(userInfo);
+//     name.value = "";
+//     email.value = "";
+//     password.value = "";
+// }
+
+// const video = document.querySelector("video");
+// video.addEventListener("volumechange", canplayHandeler);
+
+// function canplayHandeler(e){
+//     //console.log("canplay");
+//     //console.log("play");
+//     //console.log("pause");
+//     //console.log("playing");
+//     //console.log("Thanks for watching");
+//     console.log("Volume Changed");
+// }
+
+// window.addEventListener("load", function(){
+//     console.log("Loaded");
+// });
+// window.addEventListener("unload", function(){
+//     console.log("Unloaded");
+// });
+// window.addEventListener("scroll", function(){
+//     console.log("Scrolled");
+// });
+// window.addEventListener("resize", function(){
+//     console.log("Resized");
+// });
+// window.addEventListener("resize", function(){
+//     const height = window.outerHeight;
+//     const width = window.outerWidth;
+//     console.log(`Height: ${height}, Width: ${width}`);
+// });
+
+const details = document.querySelector("details");
+details.addEventListener("toggle", function(e){
+    //console.log("Toggled");
+    console.log(e.target.open);
+});
