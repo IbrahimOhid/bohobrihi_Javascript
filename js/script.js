@@ -1290,8 +1290,211 @@ olItem.className = "React";
 //     console.log(`Height: ${height}, Width: ${width}`);
 // });
 
-const details = document.querySelector("details");
-details.addEventListener("toggle", function(e){
-    //console.log("Toggled");
-    console.log(e.target.open);
-});
+// const details = document.querySelector("details");
+// details.addEventListener("toggle", function(e){
+//     //console.log("Toggled");
+//     console.log(e.target.open);
+// });
+
+// var div = document.querySelector("div");
+// div.addEventListener("click", function(e){
+//     //console.log("CLicked");
+//     //console.log(e.target);
+//     //console.log(e.target.className);
+//     //console.log(e.target.id);
+//     //console.log(e.target.innerHTML);
+//     //console.log(e.target.innerText);
+//     //console.log(e.target.textContent);
+// });
+
+// div.addEventListener("dblclick", function(){
+//     console.log("dblclicked");
+// });
+
+// div.addEventListener("mousedown", function(){
+//     console.log("MouseDownded");
+// });
+
+// div.addEventListener("mouseup", function(){
+//     console.log("MouseUped");
+// });
+
+// div.addEventListener("mouseenter", function(){
+//     console.log("MouseEntered");
+// });
+// div.addEventListener("mouseleave", function(){
+//     console.log("MouseLeaved");
+// })
+
+// div.addEventListener("mouseover", function(){
+//     console.log("MouseOvered");
+// });
+
+// div.addEventListener("mousemove", function(e){
+//     // console.log("MouseMOved");
+//     // console.log("ClientX : " + e.clientX);
+//     //console.log("ClientY : " + e.clientY);
+//     //console.log("OffsetX = " + e.offsetX);
+//     //console.log("OffsetY = " + e.offsetY);
+// });
+
+// var buttons = document.querySelectorAll(".btn");
+
+// Array.from(buttons).map((button) => {
+//     button.addEventListener("click", function(e){
+//         console.log(e.target.innerText);
+//     });
+// });
+
+// const textarea = document.querySelector("textarea");
+// textarea.addEventListener("keydown", function(e){
+//     //console.log("keydown");
+//     if(e.repeat){
+//         alert("Don't Repeat");
+//     }
+// });
+// textarea.addEventListener("keypress", function(){
+//     console.log("keypress");
+// });
+// textarea.addEventListener("keyup", function(e){
+//     //console.log(e.key);
+//     //console.log(e.keyCode);
+//     //console.log(e.code);
+//     //console.log(e.shiftKey);
+//     if(e.shiftKey){
+//         console.log("Shift+ " + e.key);
+//     }
+// });
+
+// const input = document.querySelector("input");
+// input.addEventListener("blur", function(e){
+//     //console.log("blur");
+//     // input.style.background = "tomato";
+//     // input.style.padding = "0";
+//     // console.log(e.target.value);
+//     //input.value = "";
+//     input.value = e.target.value.toUpperCase();
+// })
+// input.addEventListener("focus", function(){
+//     //console.log("focus");
+//     // input.style.background = "blue";
+//     // input.style.padding = "5rem";
+// })
+// input.addEventListener("focusin", function(){
+//     console.log("focusin");
+// })
+
+// input.addEventListener("focusout", function(){
+//     console.log("focusout");
+// })
+
+// const input = document.querySelector("input");
+// const p = document.querySelector("p");
+// input.addEventListener("copy", function(){
+//     p.innerHTML = "You Have Copyed."
+// })
+// input.addEventListener("cut", function(){
+//     p.innerHTML = "You Have Cuted."
+// })
+// input.addEventListener("paste", function(){
+//     p.innerHTML = "You Have Pasted."
+// })
+
+// const div = document.querySelector("div");
+// const p = document.querySelector("p");
+
+// p.addEventListener("dragstart", function(e){
+//     console.log(e.target.id);
+// })
+
+//console.log(window.location);
+//console.log(location.href);
+//console.log(location.protocol);
+//console.log(location.hostname);
+// console.log(location.port);
+// console.log(location.pathname);
+
+// const locations = document.querySelector(".location");
+// const p1 = locations.children[0];
+// p1.textContent = location.href;
+// const p2 = locations.children[1];
+// p2.textContent = location.protocol;
+// const p5 = locations.children[2];
+// p5.textContent = location.hostname;
+// const p3 = locations.children[3];
+// p3.textContent = location.port;
+// const p4 = locations.children[4];
+// p4.textContent = location.pathname;
+ 
+// const button = document.querySelector("#btn");
+// button.addEventListener("click", function(){
+//     location.assign("https://anisulislam.netlify.app/");
+// });
+
+//alert("Error Here");
+//confirm("ERROR");
+
+// function deleteSomething(){
+//     let value = confirm("Are you Delete ?");
+//     if(value){
+//         console.log("YES Delete");
+//     }else{
+//         console.log("NO Delete");
+//     }
+// }
+// deleteSomething();
+
+// setTimeout(() => {
+//     console.log("Hello");
+// }, 3000);
+// setTimeout(Display, 2000);
+// function Display(){
+//     console.log("Bangladesh");
+// }
+
+// const saveButton = document.querySelector(".save-btn");
+// const message = document.querySelector(".message");
+// saveButton.addEventListener("click", function(){
+//     message.textContent = "Registration Succesful"; 
+//     setTimeout(() => {
+//         message.textContent = "";
+//         }, 2000);
+// })
+// const saveButton = document.querySelector(".save-btn");
+// const message = document.querySelector(".message");
+// saveButton.addEventListener("click", startCount);
+
+// function startCount(){
+//     const count = 1;
+//     message.textContent = count;
+//     setInterval(() => {
+//         count++;
+//         message.textContent = count;
+//     }, 1000);
+// }
+
+// const saveButton = document.querySelector(".save-btn");
+// const message = document.querySelector(".message");
+// saveButton.addEventListener("click", startClock);
+
+// function startClock(){
+//     const date = new Date();
+//     const hour = date.getHours();
+//     const minutes = date.getMinutes();
+//     const seconds = date.getSeconds();
+//     minutes = formatTime(minutes);
+//     seconds = formatTime(seconds);
+
+//     const time = hour + ":" + minutes + ":" + seconds;
+
+//     message.textContent = time;
+
+//     setInterval(startClock, 1000);
+// }
+
+// function formatTime(value){
+//     if(value < 10){
+//         value = "0" + value;
+//     }
+//     return;
+// }
