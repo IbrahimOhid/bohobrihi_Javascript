@@ -1425,7 +1425,7 @@ olItem.className = "React";
 // p3.textContent = location.port;
 // const p4 = locations.children[4];
 // p4.textContent = location.pathname;
- 
+
 // const button = document.querySelector("#btn");
 // button.addEventListener("click", function(){
 //     location.assign("https://anisulislam.netlify.app/");
@@ -1498,3 +1498,90 @@ olItem.className = "React";
 //     }
 //     return;
 // }
+
+//ERROR HANDLING
+
+// try {
+//     alert("Hi Everyone");
+//     alert(x);
+//     alert("Bye Everyone");
+// } catch (err) {
+//     console.log(err);
+//     // console.log(err.name);
+//     // console.log(err.message);
+// }finally{
+//     alert("Always Show");
+// }
+// alert("Hi Everyone");
+// alert(x);
+// alert("Bye Everyone");
+
+// document.querySelector("#btn").addEventListener("click", function(){
+//     var num = document.querySelector("#text").value;
+
+//     try{
+//         if(num < 5){
+//             throw "Input is to Low";
+//         }else if(num > 10){
+//             throw "Input is to HIgh";
+//         }
+//     }catch(err){
+//         console.log(err);
+//     }
+// })
+
+// console.log("Before Error");
+// try{
+//    // test();
+// }catch(err){
+//     //console.log(err);
+//     console.log(err.message);
+//     console.log(err.name);
+// }finally{
+//     console.log("Finally RUn");
+// }
+// console.log("After Error");
+
+
+// document.querySelector("#btn").addEventListener("click", function(){
+//     var num = document.querySelector("#text").value;
+//     try{
+//         if(num < 15){
+//             throw "To small";
+//         }else if(num > 15){
+//             throw "To Big";
+//         }
+//     }catch(err){
+//         console.log(err);
+//     }
+// })
+
+//Regular Expression
+// let re;
+// let str;
+
+// re = /hello/i;
+// str = "i love Hello Bangladesh";
+// str = "world";
+// // console.log(re);
+// // console.log(re.source);
+
+// //let result = re.exec(str);
+// let result = re.test(str);
+// // result = str.match(re);
+// // result = str.search(re);
+// console.log(result);
+let re;
+let str;
+re = /hello$/i;
+str = "Hello";
+
+console.log(re.exec(str));
+reTest(re, str);
+function reTest(re, str){
+    if(re.test(str)){
+        console.log(`"${str}" Matching "${re.source}`);
+    }else{
+        console.log(`"${str}" Not Matching "${re.source}`);
+    }
+}
