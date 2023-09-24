@@ -1571,17 +1571,37 @@ olItem.className = "React";
 // // result = str.match(re);
 // // result = str.search(re);
 // console.log(result);
+// let re;
+// let str;
+// re = /hello$/i;
+// str = "Hello";
+// re = /he[ll]o/;
+// str = "helo";
+
+// console.log(re.exec(str));
+// reTest(re, str);
+// function reTest(re, str){
+//     if(re.test(str)){
+//         console.log(`"${str}" Matching "${re.source}`);
+//     }else{
+//         console.log(`"${str}" Not Matching "${re.source}`);
+//     }
+// }
+
 let re;
 let str;
-re = /hello$/i;
-str = "Hello";
 
-console.log(re.exec(str));
-reTest(re, str);
-function reTest(re, str){
-    if(re.test(str)){
-        console.log(`"${str}" Matching "${re.source}`);
-    }else{
-        console.log(`"${str}" Not Matching "${re.source}`);
-    }
-}
+// Postal Code
+// 4700, 4000
+re = /^[0-9]{4}$/
+str = "4730";
+
+// Phone Number
+// 01717888888 +8801717888888 8801717888888
+re = /^01[0-9]{9}$/;
+str = "01834598999"
+
+re = /^(\+)?(88)?01[0-9]{9}$/;
+str = "+8801717888888";
+
+console.log(re.test(str));
