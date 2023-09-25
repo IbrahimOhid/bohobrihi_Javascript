@@ -1588,20 +1588,52 @@ olItem.className = "React";
 //     }
 // }
 
-let re;
-let str;
+// let re;
+// let str;
 
-// Postal Code
-// 4700, 4000
-re = /^[0-9]{4}$/
-str = "4730";
+// // Postal Code
+// // 4700, 4000
+// re = /^[0-9]{4}$/
+// str = "4730";
 
-// Phone Number
-// 01717888888 +8801717888888 8801717888888
-re = /^01[0-9]{9}$/;
-str = "01834598999"
+// // Phone Number
+// // 01717888888 +8801717888888 8801717888888
+// re = /^01[0-9]{9}$/;
+// str = "01834598999"
 
-re = /^(\+)?(88)?01[0-9]{9}$/;
-str = "+8801717888888";
+// re = /^(\+)?(88)?01[0-9]{9}$/;
+// str = "+8801717888888";
 
-console.log(re.test(str));
+// console.log(re.test(str));
+
+// my favourite color is gray. Hex colorrrrr code is	#808080.
+// i belived your are not "Color blind"!
+// if you are not color blind then tell me what is your favourite 
+// Colour?
+// or you like multiple color?
+// can we make the 'r' silent? Like colo! REGULAR EXPRESSION makes me
+// forget all spellings he he!
+
+//Regex IN Javascript
+
+// const text = "#2A2A2A"; //2A2A2A
+// const regex = /#?([\da-fA-f]{2})([\da-fA-f]{2})([\da-fA-f]{2})/g;
+
+// const matches = text.match(regex);
+// const index = text.search(regex);
+// const replaced = text.replace(regex, "#000000");
+// const testing = regex.test(text);
+
+// console.log(matches,index,replaced,testing);
+
+const text = "+88-01834598910";  //+88-01834598910
+const regex = /(\88?)-?01[1-9]\d{8}/g;
+
+const matches = text.match(regex);
+const index = text.search(regex);
+const replaced = text.replace(regex, "01925425923");
+const testing = regex.test(text);
+
+console.log(matches,index,replaced,testing);
+
+
