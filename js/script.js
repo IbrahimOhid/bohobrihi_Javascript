@@ -1626,14 +1626,36 @@ olItem.className = "React";
 
 // console.log(matches,index,replaced,testing);
 
-const text = "+88-01834598910";  //+88-01834598910
-const regex = /(\88?)-?01[1-9]\d{8}/g;
+// const text = "+88-01834598910";  //+88-01834598910
+// const regex = /(\88?)-?01[1-9]\d{8}/g;
 
-const matches = text.match(regex);
-const index = text.search(regex);
-const replaced = text.replace(regex, "01925425923");
-const testing = regex.test(text);
+// const matches = text.match(regex);
+// const index = text.search(regex);
+// const replaced = text.replace(regex, "01925425923");
+// const testing = regex.test(text);
 
-console.log(matches,index,replaced,testing);
+// console.log(matches,index,replaced,testing);
+
+//JSON 
+// var student = {name: "Ibrahim", age: 25, hometown: "Islamabad"};
+
+// var json_stu = JSON.stringify(student);
+// console.log(json_stu);
+
+// var person = {
+//     name: "Ibrahim",
+//     age: 26,
+//     hometown: "Eidgaon",
+//     dob: 1997-05-07,
+//     married: false,
+//     test_null: null,
+//     test_undefined: undefined,
+//     greet: function(){
+//         console.log("Hello Bangladesh")
+//     }
+// }
+// var json_person = JSON.stringify(person);
+// console.log(json_person);
+
 
 

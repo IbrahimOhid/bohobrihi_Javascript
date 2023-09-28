@@ -1,0 +1,48 @@
+{
+    "sutdents": [
+        {
+            "name": "Ibrahim",
+            "middleName": "Ohid",
+            "age": 27,
+            "cgpa": 3.05,
+            "isRegistered": true,
+            "languages": [
+                "Bangali",
+                "English",
+                "Hindi"
+            ],
+            "friends": [
+                {
+                    "name": "jisan", 
+                    "age": 25
+                },
+                {
+                    "name": "Mahir",
+                    "age": 26
+                }
+            ]
+        },
+        {
+            "name": "Rafiya",
+            "middleName": "Kawser",
+            "age": 22,
+            "cgpa": 3.05,
+            "isRegistered": true,
+            "languages": [
+                "Bangali",
+                "English",
+                "Hindi"
+            ],
+            "friends": [
+                {
+                    "name": "afifa",
+                    "age": 22
+                },
+                {
+                    "name": "nayma",
+                    "age": 22
+                }
+            ]
+        }
+    ]
+}
