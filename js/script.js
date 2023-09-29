@@ -1658,4 +1658,27 @@ olItem.className = "React";
 // console.log(json_person);
 
 
+// document.querySelector("#get_data").addEventListener("click", loadData);
+// function loadData(){
+//     let xhr = new XMLHttpRequest();
+//     xhr.open("GET", "/txt/data.txt", true);
+//     xhr.onload = function(){
+//         if(this.status === 200){
+//             document.querySelector("#title").innerHTML = this.responseText;
+//         }
+//     }
+//     xhr.send();
+// }
+
+document.querySelector("#get_data").addEventListener("click", loadJoke);
+function loadJoke(){
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "https://api.chucknorris.io/jokes/random", true);
+    xhr.onload = function () {
+        if(this.status === 200){
+            console.log(this.responseText);
+        }
+    }
+    xhr.send();
+}
 

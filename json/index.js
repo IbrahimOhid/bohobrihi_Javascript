@@ -16,11 +16,13 @@
 //     console.log(data[x]);
 // }
 
-const data2 = {
-    name : "Ibrahim",
-    age : 25
-}
+// const data2 = {
+//     name : "Ibrahim",
+//     age : 25
+// }
 
-const data_1 = JSON.stringify(data2);
-const data_2 = JSON.parse(data_1);
-console.log(data_2);
+// const data_1 = JSON.stringify(data2);
+// const data_2 = JSON.parse(data_1);
+// console.log(data_2);
+
+
