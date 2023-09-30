@@ -1689,3 +1689,124 @@ olItem.className = "React";
 //         return res.json();
 //     })
 // }
+
+// const inputBox = document.querySelector("#input_box");
+// const btn = document.querySelector("#add_btn");
+// const lists = document.querySelector("#lists");
+
+// btn.addEventListener("click", function(){
+//     if(inputBox.value === ''){
+//         alert("You Must Write Something");
+//     }else{
+//         const li = document.createElement('li');
+//         li.innerHTML = inputBox.value + " ";
+//         lists.appendChild(li);
+//         const link = document.createElement('a');
+//         link.setAttribute('href', '#');
+//         link.innerHTML = 'x';
+//         li.appendChild(link);
+//     }
+//     inputBox.value = '';
+// })
+
+// lists.addEventListener("click", function(e){
+//     if(e.target.hasAttribute('href')){
+//         const ele = e.target.parentElement;
+//         ele.remove();
+//     }
+// })
+
+
+// const inputBox = document.querySelector('#input_box');
+// const addList = document.querySelector('#add_list');
+// const lists = document.querySelector('#lists');
+// const clearList = document.querySelector('#clear_btn');
+
+// addList.addEventListener('click', addLists);
+// lists.addEventListener('click', removeList);
+// clearList.addEventListener('click', clearBtn);
+
+
+// function addLists(){
+//     if(inputBox.value === ''){
+//         alert("Write Something");
+//     }else{
+//         const li = document.createElement('li');
+//         li.innerHTML = inputBox.value + " ";
+//         lists.appendChild(li);
+//         const link = document.createElement('a');
+//         link.setAttribute('href', '#');
+//         link.innerHTML = 'x';
+//         li.appendChild(link);
+//     }
+//     inputBox.value = " ";
+//     saveData();
+// }
+
+// function removeList(e){
+//     if(e.target.hasAttribute('href')){
+//         const ele = e.target.parentElement;
+//         ele.remove();
+//         saveData();
+//     }
+// }
+
+// function clearBtn(e){
+//     lists.innerHTML = "";
+// }
+
+// function saveData(){
+//     localStorage.setItem('data', lists.innerHTML);
+// }
+// function showList(){
+//     lists.innerHTML = localStorage.getItem('data');
+// }
+// showList();
+
+
+const inputList = document.querySelector('#input_list');
+const addList = document.querySelector('#add_list');
+const taskList = document.querySelector('#task_list');
+const clearList = document.querySelector('#clear_list');
+
+addList.addEventListener('click', addLists);
+taskList.addEventListener('click', removeList);
+clearList.addEventListener('click', clearLists);
+
+
+function addLists(){
+    if(inputList.value === ''){
+        alert('Write a Something');
+    }else{
+        const li = document.createElement('li');
+        li.innerHTML = inputList.value + ' ';
+        taskList.appendChild(li);  
+        const link = document.createElement('a');
+        link.setAttribute('href', '#');
+        link.innerHTML = 'x';
+        li.appendChild(link); 
+    }
+    inputList.value = '';
+    saveData();
+}
+
+function removeList(e){
+    if(e.target.hasAttribute('href')){
+        const ele = e.target.parentElement;
+        ele.remove();
+        saveData();
+    }
+}
+
+function clearLists(e){
+    taskList.innerHTML = '';
+}
+
+function saveData(){
+    localStorage.setItem('data', taskList.innerHTML);
+}
+
+function showLists(){
+    taskList.innerHTML = localStorage.getItem('data')
+}
+showLists();
