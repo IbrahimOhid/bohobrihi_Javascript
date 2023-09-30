@@ -1670,15 +1670,22 @@ olItem.className = "React";
 //     xhr.send();
 // }
 
-document.querySelector("#get_data").addEventListener("click", loadJoke);
-function loadJoke(){
-    let xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.chucknorris.io/jokes/random", true);
-    xhr.onload = function () {
-        if(this.status === 200){
-            console.log(this.responseText);
-        }
-    }
-    xhr.send();
-}
+// document.querySelector("#get_data").addEventListener("click", loadJoke);
+// function loadJoke(){
+//     let xhr = new XMLHttpRequest();
+//     xhr.open("GET", "https://api.chucknorris.io/jokes/random", true);
+//     xhr.onload = function () {
+//         if(this.status === 200){
+//             console.log(this.responseText);
+//         }
+//     }
+//     xhr.send();
+// }
 
+// document.querySelector("#get_data").addEventListener("click", getData);
+// function getData() {
+//     fetch("https://jsonplaceholder.typicode.com/users")
+//     .then(function(res) {
+//         return res.json();
+//     })
+// }
