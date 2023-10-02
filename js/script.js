@@ -1764,49 +1764,88 @@ olItem.className = "React";
 // showList();
 
 
-const inputList = document.querySelector('#input_list');
-const addList = document.querySelector('#add_list');
-const taskList = document.querySelector('#task_list');
-const clearList = document.querySelector('#clear_list');
+// const inputList = document.querySelector('#input_list');
+// const addList = document.querySelector('#add_list');
+// const taskList = document.querySelector('#task_list');
+// const clearList = document.querySelector('#clear_list');
 
-addList.addEventListener('click', addLists);
-taskList.addEventListener('click', removeList);
-clearList.addEventListener('click', clearLists);
+// addList.addEventListener('click', addLists);
+// taskList.addEventListener('click', removeList);
+// clearList.addEventListener('click', clearLists);
 
 
-function addLists(){
-    if(inputList.value === ''){
-        alert('Write a Something');
+// function addLists(){
+//     if(inputList.value === ''){
+//         alert('Write a Something');
+//     }else{
+//         const li = document.createElement('li');
+//         li.innerHTML = inputList.value + ' ';
+//         taskList.appendChild(li);  
+//         const link = document.createElement('a');
+//         link.setAttribute('href', '#');
+//         link.innerHTML = 'x';
+//         li.appendChild(link); 
+//     }
+//     inputList.value = '';
+//     saveData();
+// }
+
+// function removeList(e){
+//     if(e.target.hasAttribute('href')){
+//         const ele = e.target.parentElement;
+//         ele.remove();
+//         saveData();
+//     }
+// }
+
+// function clearLists(e){
+//     taskList.innerHTML = '';
+// }
+
+// function saveData(){
+//     localStorage.setItem('data', taskList.innerHTML);
+// }
+
+// function showLists(){
+//     taskList.innerHTML = localStorage.getItem('data')
+// }
+// showLists();
+
+
+//Book List
+const title = document.querySelector('#title');
+const author = document.querySelector('#author');
+const year = document.querySelector('#year');
+const btn = document.querySelector('.btn');
+const bookList = document.querySelector('#book-list');
+
+btn.addEventListener('click', addBook);
+
+
+function addBook(e){
+    e.preventDefault();
+    if(title.value == '' && author.value == '' && year.value == ''){
+        alert('Write a Full Form');
     }else{
-        const li = document.createElement('li');
-        li.innerHTML = inputList.value + ' ';
-        taskList.appendChild(li);  
-        const link = document.createElement('a');
-        link.setAttribute('href', '#');
-        link.innerHTML = 'x';
-        li.appendChild(link); 
+        const newRow = document.createElement('tr');
+
+        const newTitle = document.createElement('th');
+        newTitle.innerHTML = title.value;
+        newRow.appendChild(newTitle);
+
+        const newAuthor = document.createElement('th');
+        newAuthor.innerHTML = author.value;
+        newRow.appendChild(newAuthor);
+
+        const newYear = document.createElement('th');
+        newYear.innerHTML = year.value;
+        newRow.appendChild(newYear);
+
+        bookList.appendChild(newRow);
+
+        title.value = '';
+        author.value = '';
+        year.value = '';
     }
-    inputList.value = '';
-    saveData();
+    
 }
-
-function removeList(e){
-    if(e.target.hasAttribute('href')){
-        const ele = e.target.parentElement;
-        ele.remove();
-        saveData();
-    }
-}
-
-function clearLists(e){
-    taskList.innerHTML = '';
-}
-
-function saveData(){
-    localStorage.setItem('data', taskList.innerHTML);
-}
-
-function showLists(){
-    taskList.innerHTML = localStorage.getItem('data')
-}
-showLists();

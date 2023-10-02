@@ -48,7 +48,7 @@
         <button class="btn">Button 3</button> -->
 
         <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
-        
+
         <!-- <input type="text">
         <p></p> -->
 
@@ -72,8 +72,11 @@
         <!-- <h2>AJAX DATA</h2>
         <button id="get_data">Get Data</button>
         <h4 id="title"></h4> -->
-            <!-- <button id="get_data">Get Data</button> -->
-           <h3>Task List</h3>
+        <!-- <button id="get_data">Get Data</button> -->
+
+        <!-- Task list -->
+
+        <!-- <h3>Task List</h3>
            <div>
             <input type="text" name="" id="input_list" placeholder="Write a text">
             <button id="add_list">Add Task</button>
@@ -82,7 +85,39 @@
            <ol id="task_list">
 
            </ol>
-        <button id="clear_list">Clear Task</button>         
+        <button id="clear_list">Clear Task</button>          -->
+
+        <!-- Book List -->
+        <h2>Book List</h2>
+        <form action="" id="book-form">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" name="" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="title">Author</label>
+                <input type="text" name="" id="author" class="u-full-width">
+            </div>
+            <div>
+                <label for="title">Year</label>
+                <input type="text" name="" id="year" class="u-full-width">
+            </div>
+            <div>
+                <input type="submit" value="Add Book" class="u-full-width btn">
+            </div>
+        </form>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+            </tbody>
+        </table>
     </div>
 
     <script src="/js/script.js"></script>
