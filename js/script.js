@@ -1812,20 +1812,22 @@ olItem.className = "React";
 // showLists();
 
 
-//Book List
+// 
+
 const title = document.querySelector('#title');
 const author = document.querySelector('#author');
 const year = document.querySelector('#year');
-const btn = document.querySelector('.btn');
+const addBook = document.querySelector('#add-book');
 const bookList = document.querySelector('#book-list');
 
-btn.addEventListener('click', addBook);
+addBook.addEventListener('click', addBooks);
+bookList.addEventListener('click', removeLists);
 
 
-function addBook(e){
+function addBooks(e){
     e.preventDefault();
-    if(title.value == '' && author.value == '' && year.value == ''){
-        alert('Write a Full Form');
+    if(title.value === '' && author.value === '' && year.value === ''){
+        alert('Please Fill up Form');
     }else{
         const newRow = document.createElement('tr');
 
@@ -1841,11 +1843,24 @@ function addBook(e){
         newYear.innerHTML = year.value;
         newRow.appendChild(newYear);
 
+        
+        const delIcon = document.createElement('a');
+        delIcon.setAttribute('href', '#');
+        delIcon.innerHTML = 'X';
+        newRow.appendChild(delIcon);
+        
+
         bookList.appendChild(newRow);
 
         title.value = '';
         author.value = '';
         year.value = '';
     }
-    
+}
+
+function removeLists(e){
+    if(e.target.hasAttribute('href')){
+        const ele = e.target.parentElement;
+        ele.remove();
+    }
 }
