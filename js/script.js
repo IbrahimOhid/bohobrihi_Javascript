@@ -1814,53 +1814,119 @@ olItem.className = "React";
 
 // 
 
-const title = document.querySelector('#title');
-const author = document.querySelector('#author');
-const year = document.querySelector('#year');
-const addBook = document.querySelector('#add-book');
-const bookList = document.querySelector('#book-list');
+// const title = document.querySelector('#title');
+// const author = document.querySelector('#author');
+// const year = document.querySelector('#year');
+// const addBook = document.querySelector('#add-book');
+// const bookList = document.querySelector('#book-list');
 
-addBook.addEventListener('click', addBooks);
-bookList.addEventListener('click', removeLists);
+// addBook.addEventListener('click', addBooks);
+// bookList.addEventListener('click', removeLists);
 
 
-function addBooks(e){
-    e.preventDefault();
-    if(title.value === '' && author.value === '' && year.value === ''){
-        alert('Please Fill up Form');
-    }else{
-        const newRow = document.createElement('tr');
+// function addBooks(e){
+//     e.preventDefault();
+//     if(title.value === '' && author.value === '' && year.value === ''){
+//         alert('Please Fill up Form');
+//     }else{
+//         const newRow = document.createElement('tr');
 
-        const newTitle = document.createElement('th');
-        newTitle.innerHTML = title.value;
-        newRow.appendChild(newTitle);
+//         const newTitle = document.createElement('th');
+//         newTitle.innerHTML = title.value;
+//         newRow.appendChild(newTitle);
 
-        const newAuthor = document.createElement('th');
-        newAuthor.innerHTML = author.value;
-        newRow.appendChild(newAuthor);
+//         const newAuthor = document.createElement('th');
+//         newAuthor.innerHTML = author.value;
+//         newRow.appendChild(newAuthor);
 
-        const newYear = document.createElement('th');
-        newYear.innerHTML = year.value;
-        newRow.appendChild(newYear);
+//         const newYear = document.createElement('th');
+//         newYear.innerHTML = year.value;
+//         newRow.appendChild(newYear);
 
-        
-        const delIcon = document.createElement('a');
-        delIcon.setAttribute('href', '#');
-        delIcon.innerHTML = 'X';
-        newRow.appendChild(delIcon);
-        
 
-        bookList.appendChild(newRow);
+//         const delIcon = document.createElement('a');
+//         delIcon.setAttribute('href', '#');
+//         delIcon.innerHTML = 'X';
+//         newRow.appendChild(delIcon);
 
-        title.value = '';
-        author.value = '';
-        year.value = '';
-    }
-}
 
-function removeLists(e){
-    if(e.target.hasAttribute('href')){
-        const ele = e.target.parentElement;
-        ele.remove();
-    }
-}
+//         bookList.appendChild(newRow);
+
+//         title.value = '';
+//         author.value = '';
+//         year.value = '';
+//     }
+// }
+
+// function removeLists(e){
+//     if(e.target.hasAttribute('href')){
+//         const ele = e.target.parentElement;
+//         ele.remove();
+//     }
+// }
+
+//ES6
+
+// var a = 1;
+// let b = 2;
+// const c = 3;
+
+// console.log(`Global Scope : `, a, b, c);
+
+// function test() {
+//     var a = 4;
+//     let b = 5;
+//     const c = 6;
+
+//     console.log(`Function Scope :`, a, b, c);
+// }
+// test();
+
+// console.log(`Global Scope : `, a, b, c);
+
+// if (true) {
+//     var a = 7;
+//     let b = 8;
+//     const c = 9;
+//     console.log(`If Scope :`, a, b, c)
+// }
+// console.log(`Global Scope : `, a, b, c);
+
+// for(let a = 0; a < 10; a++){
+//     console.log(`Loop Scope :`, a);
+// }
+// console.log(`Global Scope : `, a, b, c);
+
+// function text(){
+//     console.log("hello");
+// }
+// text();
+
+// let hello = (name, dob) => {
+//     console.log(name, dob);
+// }
+// hello('Ibrahim', '05-07-1997');
+
+//let getSqur = num => num*num;
+//console.log(getSqur(4));
+
+// let getSqur = num => {return num*num};
+// console.log(getSqur(4));
+
+// numbers = [1, 2, 3, 4, 5];
+// // let printAll = num => {
+// //     console.log(num);
+// // }
+// // numbers.forEach(printAll);
+
+// let allSqr = numbers.map(item => item * item);
+// console.log(allSqr);
+
+let name = 'Ibrahim';
+let age = '07 may, 1997';
+console.log(`Name: ${name} 
+Age: ${age}`);
+
+let a = 50;
+let b = 60;
+console.log(`${a} + ${b} = ${a + b}`);
