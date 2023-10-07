@@ -1953,9 +1953,72 @@ olItem.className = "React";
 // let newStr = [...str];
 // console.log(newStr);
 
-let fruit1 = ['Apple', 'Banana', 'Orange'];
-let fruit2 = ['Grape', 'Guava'];
-let fruit3 = 'Jackfruit';
+// let fruit1 = ['Apple', 'Banana', 'Orange'];
+// let fruit2 = ['Grape', 'Guava'];
+// let fruit3 = 'Jackfruit';
 
-let fruits = [...fruit1, ...fruit2, fruit3];
-console.log(fruits);
+// let fruits = [...fruit1, ...fruit2, fruit3];
+// console.log(fruits);
+
+// let numbers = [23, 33, 0, -1, 4];
+// console.log(Math.max(...numbers));
+// console.log(Math.min(...numbers));
+
+// let person = ["Ibrahim", "Ohid"];
+
+// let name = (fname, lstname) => {
+//     console.log(`Hello ${fname} ${lstname}`);
+// }
+// name(...person);
+
+// let fruits = ['mango', 'banana', 'orange', 'grape', 'jackfruit'];
+
+// let [fruit, ...second] = fruits;
+// console.log(fruit);
+// console.log(second);
+
+// let person = {
+//     fname : 'Ibrahim',
+//     lname : 'Ohid',
+//     dob : '07-05-1997'
+// }
+// let {fname, ...lname} = person;
+// console.log(fname);
+// console.log(lname);
+
+// class Person {
+//     constructor(age, name){
+//         this.age = age;
+//         this.name = name;
+//     }
+// }
+
+// let person1 = new Person('25', 'Ibrahim');
+// console.log(person1)
+
+// let prom = new Promise((resolve, reject)=> {
+//     let a = 1 + 3;
+//     if(a == 2){
+//         resolve('Right');
+//     }else{
+//         reject('Wrong');
+//     }
+// })
+
+// prom.then((message) => {
+//     console.log(`it's ` + message);
+// }).catch((message) => {
+//     console.log(`it's ` + message);
+// })
+
+let mySet = new Set([2,1,2,3]);
+
+// mySet.add('Hello');
+// mySet.delete(2);
+
+//console.log(mySet.has(5));
+// console.log(mySet.size);
+
+for(x of mySet.entries()){
+    console.log(x);
+}
