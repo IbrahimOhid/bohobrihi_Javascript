@@ -1922,11 +1922,40 @@ olItem.className = "React";
 // let allSqr = numbers.map(item => item * item);
 // console.log(allSqr);
 
-let name = 'Ibrahim';
-let age = '07 may, 1997';
-console.log(`Name: ${name} 
-Age: ${age}`);
+// let name = 'Ibrahim';
+// let age = '07 may, 1997';
+// console.log(`Name: ${name} 
+// Age: ${age}`);
 
-let a = 50;
-let b = 60;
-console.log(`${a} + ${b} = ${a + b}`);
+// let a = 50;
+// let b = 60;
+// console.log(`${a} + ${b} = ${a + b}`);
+
+// let fruits = ['Apple', 'Banana', 'Orange'];
+// let [friut1, , friut3] = fruits;
+// console.log(friut1, friut3);
+
+// let a,b ;
+// a = 8; b = 20;
+
+// [a,b] = [b,a];
+// console.log(`a = ${a} b = ${b}`);
+
+// let person = {
+//     firstName: 'Ibrahim',
+//     lastName: 'Ohid',
+//     dob: '05-07-1997'
+// }
+// let {firstName, lastName, dob} = person;
+// console.log(firstName, lastName, dob);
+
+// let str = 'IBrahim';
+// let newStr = [...str];
+// console.log(newStr);
+
+let fruit1 = ['Apple', 'Banana', 'Orange'];
+let fruit2 = ['Grape', 'Guava'];
+let fruit3 = 'Jackfruit';
+
+let fruits = [...fruit1, ...fruit2, fruit3];
+console.log(fruits);
