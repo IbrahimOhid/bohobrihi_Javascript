@@ -2011,7 +2011,7 @@ olItem.className = "React";
 //     console.log(`it's ` + message);
 // })
 
-let mySet = new Set([2,1,2,3]);
+// let mySet = new Set([2,1,2,3]);
 
 // mySet.add('Hello');
 // mySet.delete(2);
@@ -2019,6 +2019,4 @@ let mySet = new Set([2,1,2,3]);
 //console.log(mySet.has(5));
 // console.log(mySet.size);
 
-for(x of mySet.entries()){
-    console.log(x);
-}
+
