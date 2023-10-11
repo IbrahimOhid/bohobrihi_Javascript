@@ -15,3 +15,18 @@
 //     console.log(sum);
 // }
 // add(20, 35);
+
+// x = 10;
+// console.log(x);
+// var x;
+
+// function name(text = 'Hello') {
+//     console.log(`${text}`);
+// }
+// name();
+// name('Hello Mohammad');
+
+function sum(x, y, ...z){
+    console.log(`x = ${x}, y = ${y}, z = ${z}`);
+}
+sum(10, 20, 30, 40, 50, 60);
