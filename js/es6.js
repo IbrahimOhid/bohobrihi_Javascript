@@ -5,6 +5,8 @@
 // console.log(x);
 
 
+
+
 // let name = 'Ibrahim';
 // let message = `i am ${name}. i am learning Javascript.`;
 // console.log(message);
@@ -44,14 +46,29 @@
 // let numbers = [...num1, ...num2];
 // console.log(numbers);
 
-let p1 = {
-    Name: 'ibrahim',
-    age: 26
-}
-let p2 = {
-    nationality: 'Bangladesh',
-    Union: 'Islamabad'
-}
+// let p1 = {
+//     Name: 'ibrahim',
+//     age: 26
+// }
+// let p2 = {
+//     nationality: 'Bangladesh',
+//     Union: 'Islamabad'
+// }
 
-let p = {...p1, ...p2};
-console.log(p);
+// let p = {...p1, ...p2};
+// console.log(p);
+
+// function student1(name, age){
+//     return{
+//         name,
+//         age
+//     }
+// }
+// console.log(student1('Ibrahim', 25));
+
+let message = {
+    body (){
+        return 'Hello Bangladesh';
+    }
+}
+console.log(message.body());
