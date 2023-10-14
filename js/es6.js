@@ -66,9 +66,9 @@
 // }
 // console.log(student1('Ibrahim', 25));
 
-let message = {
-    body (){
-        return 'Hello Bangladesh';
-    }
-}
-console.log(message.body());
+// let message = {
+//     body (){
+//         return 'Hello Bangladesh';
+//     }
+// }
+// console.log(message.body());

@@ -2020,3 +2020,30 @@ olItem.className = "React";
 // console.log(mySet.size);
 
 
+// javascript Problem Solving ⬇
+
+// function getRandomNumber(min, max){
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// console.log(getRandomNumber(1,  6));
+
+//const students = ['ibrahim', 'rahim', 'shihab', 'akash'];
+// console.log(students.sort());
+
+// const numbers = [10, 2, 3, 6, 8, 20, 1, 39];
+// console.log(numbers.sort(function(a, b){
+//     // return a - b;
+//     return b - a;
+// }));
+
+// function isLeapYear(year){
+//     if ((year % 400 === 0) || (year % 4 === 0 && year % 100 !== 0)){
+//         console.log(`${year} is a LeapYear`);
+//     }else{
+//         console.log(`${year} is not a  LeapYear`);
+//     }
+// }
+// isLeapYear(2028);
+
+
+
