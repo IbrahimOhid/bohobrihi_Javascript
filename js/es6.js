@@ -121,3 +121,45 @@
 //     arr[index] = x+5;
 // })
 // console.log(numbers);
+
+// var numbers = [2,3,4,5];
+// var sqareNum = [];
+// numbers.forEach(function(x){
+//     sqareNum.push(x*x);
+// })
+// console.log(sqareNum);
+
+// var numbers = [2,4,5,6];
+// var sqareNum = numbers.map(function(x){
+//     return x*x;
+// })
+// console.log(sqareNum);
+
+// const students = [
+//     {
+//         name : 'ibrahim',
+//         id : 27,
+//         cgpa : 3.33
+//     },
+//     {
+//         name : 'mohammad',
+//         id : 22,
+//         cgpa : 3.223
+//     },
+//     {
+//         name : 'ohid',
+//         id : 11,
+//         cgpa : 3.10
+//     }
+    
+// ]
+
+// const allStudents = students.map(students => students.cgpa);
+// console.log(allStudents);
+
+
+// const num = [22, 1, 3, 55, 7, 88];
+// const numbers = num.filter(function(x){
+//     return x < 10;
+// })
+// console.log(numbers);
