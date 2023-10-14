@@ -72,3 +72,52 @@
 //     }
 // }
 // console.log(message.body());
+
+//for ... of, for ... in
+
+// const names = ['s1', 's2', 's3'];
+// for(name of names){
+//     console.log(name);
+// }
+
+// let students = {
+//     name : 'Ibrahim',
+//     id : 27,
+//     cgpa : 3.05
+// }
+// for(x in students){
+//     console.log(`${x} : ${students[x]}`);
+// }
+
+//for , for each
+
+// var num = [10, 33, 43, 55, 32];
+// for(var x = 0; x < num.length; x++ ){
+//     console.log(num[x]);
+// }
+
+// var numbers = [20, 11, 33, 40, 44, 60];
+// numbers.forEach(function(x){
+//     console.log(x);
+// })
+
+// var num = [10, 20, 30];
+// var sqareNum = [];
+// num.forEach(function(x){
+//     sqareNum.push(x*x);
+// })
+// console.log(sqareNum);
+
+// var numbers = [10, 20, 30];
+// var newNumber = [];
+// numbers.forEach(function(x){
+//     newNumber.push(x*x);
+// })
+// console.log(newNumber);
+
+// var numbers = [10, 20, 22, 44];
+// console.log(numbers);
+// numbers.forEach(function(x, index, arr){
+//     arr[index] = x+5;
+// })
+// console.log(numbers);
