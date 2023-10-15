@@ -164,5 +164,20 @@
 // })
 // console.log(numbers);
 
+/* Arrow Function*/
+
+// function display(){
+//     console.log('Hi');
+// }
+// display();
+
+// const nums = () => console.log(1,2,3);
+// nums();
+ 
+// const para = () => 'Hello';
+// console.log(para());
+
+const add =  (num1, num2) => num1 + num2;
+console.log(add(10, 30));
 
 

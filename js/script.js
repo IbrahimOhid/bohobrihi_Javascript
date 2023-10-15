@@ -2055,11 +2055,11 @@ olItem.className = "React";
 // container.appendChild(divElement);
 
 //Event listener
-const hello = document.querySelector('#hello');
-hello.addEventListener('click', clickChange);
+// const hello = document.querySelector('#hello');
+// hello.addEventListener('click', clickChange);
  
-function clickChange(){
-    return s
-}
+// function clickChange(){
+//     return s
+// }
 
 
