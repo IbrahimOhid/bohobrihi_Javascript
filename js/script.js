@@ -2045,5 +2045,21 @@ olItem.className = "React";
 // }
 // isLeapYear(2028);
 
+//DOM
+// const divElement = document.createElement('div');
+// divElement.className = 'add-task';
+// divElement.setAttribute('id', 'book-list');
+// divElement.setAttribute('title', 'added-book');
+
+// const container = document.querySelector('#container');
+// container.appendChild(divElement);
+
+//Event listener
+const hello = document.querySelector('#hello');
+hello.addEventListener('click', clickChange);
+ 
+function clickChange(){
+    return s
+}
 
 
