@@ -177,7 +177,73 @@
 // const para = () => 'Hello';
 // console.log(para());
 
-const add =  (num1, num2) => num1 + num2;
-console.log(add(10, 30));
+// const add =  (num1, num2) => num1 + num2;
+// console.log(add(10, 30));
 
+//  const numbers = (num1, num2, num3) => num1 + num3 * num2;
+//  console.log(numbers(10, 20, 4));
 
+// const students = [
+//     {
+//         id : 101,
+//         name : 'ibrahim',
+//         gpa : 3.00
+//     },
+//     {
+//         id : 102,
+//         name : 'ohid',
+//         gpa : 2.00
+//     },
+//     {
+//         id : 103,
+//         name : 'ebnol',
+//         gpa : 4.21
+//     },
+//     {
+//         id : 104,
+//         name : 'mohammad',
+//         gpa : 2.50
+//     },
+//     {
+//         id : 105,
+//         name : 'rifa',
+//         gpa : 4.50
+//     }
+// ]
+
+// const studentNames = () =>  students.filter((x) => x.gpa > 3).map((y) => y.id);
+
+// console.log(studentNames());
+
+// const allStudents = [
+//     {
+//         id : 1,
+//         name : 'Mohammad',
+//         gpa : 3.10
+//     },
+//     {
+//         id : 2,
+//         name : 'ohid',
+//         gpa : 3.50
+//     },
+//     {
+//         id : 3,
+//         name : 'ibrahim',
+//         gpa : 2.90
+//     },
+//     {
+//         id : 4,
+//         name : 'rahim',
+//         gpa : 2.99
+//     },
+//     {
+//         id : 5,
+//         name : 'rafiya',
+//         gpa : 4.50
+//     }
+
+// ]
+
+// const studentInfo = () => allStudents.filter((x) => x.gpa > 3).map((y) => y.name);
+
+// console.log(studentInfo());
