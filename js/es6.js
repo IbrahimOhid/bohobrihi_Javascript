@@ -247,3 +247,23 @@
 // const studentInfo = () => allStudents.filter((x) => x.gpa > 3).map((y) => y.name);
 
 // console.log(studentInfo());
+
+// let nums = () => 10;
+// console.log(nums());
+
+// const number = (a, b) => a * b;
+// console.log(number(10, 5));
+
+// const numbers = (x, y) => {
+//     return x / y;
+// }
+// console.log(numbers(50, 5));
+
+const javascript = {
+    name: 'javascript',
+    libraries : ['react', 'angular'],
+    printLibraries : function() {
+        this.libraries.forEach((a) => console.log(`${this.name} love ${a}`))
+    }
+}
+javascript.printLibraries();
