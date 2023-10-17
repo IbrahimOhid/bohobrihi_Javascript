@@ -259,11 +259,11 @@
 // }
 // console.log(numbers(50, 5));
 
-const javascript = {
-    name: 'javascript',
-    libraries : ['react', 'angular'],
-    printLibraries : function() {
-        this.libraries.forEach((a) => console.log(`${this.name} love ${a}`))
-    }
-}
-javascript.printLibraries();
+// const javascript = {
+//     name: 'javascript',
+//     libraries : ['react', 'angular'],
+//     printLibraries : function() {
+//         this.libraries.forEach((a) => console.log(`${this.name} love ${a}`))
+//     }
+// }
+// javascript.printLibraries();
