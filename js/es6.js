@@ -151,7 +151,7 @@
 //         id : 11,
 //         cgpa : 3.10
 //     }
-    
+
 // ]
 
 // const allStudents = students.map(students => students.cgpa);
@@ -173,7 +173,7 @@
 
 // const nums = () => console.log(1,2,3);
 // nums();
- 
+
 // const para = () => 'Hello';
 // console.log(para());
 
@@ -267,3 +267,10 @@
 //     }
 // }
 // javascript.printLibraries();
+
+// const display = () => console.log('Hello Bangladesh');
+// display();
+
+// const message = () => 'I love you RIfa';
+// console.log(message());
+
