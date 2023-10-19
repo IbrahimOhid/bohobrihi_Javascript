@@ -274,3 +274,46 @@
 // const message = () => 'I love you RIfa';
 // console.log(message());
 
+// const num = (a,b) => (5 + 6);
+// console.log(num());
+
+// array destructuring *//
+
+// const numbers = [10, 20, 30, 40, 50];
+// const [num1, num2, ...x] = numbers;
+// console.log(num1);
+// console.log(x);
+
+//swap variable*//
+
+// var a = 33, b = 53;
+// [a, b] = [b, a];
+// console.log(a);
+// console.log(b);
+
+//object destructuring *//
+
+// const studentInfo = {
+//     id : 102,
+//     fullName : 'Ibrahim',
+//     gpa : 5.00
+// }
+// const {id, gpa} = studentInfo;
+// console.log(id);
+// console.log(gpa);
+
+//Nested object destructuring *//
+
+// const studentInfo = {
+//     id : 102,
+//     fullName : 'Ibrahim',
+//     gpa : 5.00,
+//     languase : {
+//         native : 'english',
+//         begining : 'bangla'
+//     }
+// }
+
+// const {fullName, languase} = studentInfo;
+// console.log(fullName);
+// console.log(languase.begining);
