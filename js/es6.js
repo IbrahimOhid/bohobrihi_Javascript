@@ -317,3 +317,16 @@
 // const {fullName, languase} = studentInfo;
 // console.log(fullName);
 // console.log(languase.begining);
+
+//destructuring function parameter*//
+
+const studentInfo = ({id, fullName}) => {
+    console.log(`${id}, ${fullName}`);
+}
+
+const student = {
+    id : 303,
+    fullName : 'Ibrahim'
+}
+
+studentInfo(student);
