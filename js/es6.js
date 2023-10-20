@@ -320,13 +320,13 @@
 
 //destructuring function parameter*//
 
-const studentInfo = ({id, fullName}) => {
-    console.log(`${id}, ${fullName}`);
-}
+// const studentInfo = ({id, fullName}) => {
+//     console.log(`${id}, ${fullName}`);
+// }
 
-const student = {
-    id : 303,
-    fullName : 'Ibrahim'
-}
+// const student = {
+//     id : 303,
+//     fullName : 'Ibrahim'
+// }
 
-studentInfo(student);
+// studentInfo(student);

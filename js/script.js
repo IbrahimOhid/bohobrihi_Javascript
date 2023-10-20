@@ -2062,4 +2062,34 @@ olItem.className = "React";
 //     return s
 // }
 
+var copyText = document.querySelector('#copy_text');
+var copyButton = document.querySelector('#copy_btn');
+ 
+copyButton.addEventListener('click', textCopy);
 
+function textCopy () {
+    navigator.clipboard.writeText(copyText.value);
+    copyText.value = '';
+}
+
+var cutText = document.querySelector('#cut_text');
+var cutButton = document.querySelector('#cut_btn');
+
+cutButton.addEventListener('click', textCut);
+
+function textCut(){
+    navigator.clipboard.writeText(cutText.value);
+    cutText.value = '';
+}
+
+var pasteText = document.querySelector('#paste_text');
+var pasteButton = document.querySelector('#paste_btn');
+
+pasteButton.addEventListener('click', textPaste);
+
+function textPaste() {
+        navigator.clipboard.readText()
+        .then(function(text){
+            pasteText.value = text;
+        })
+}
