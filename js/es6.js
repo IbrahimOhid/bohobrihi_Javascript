@@ -330,3 +330,48 @@
 // }
 
 // studentInfo(student);
+
+
+// let numbers = [3, 7, 13, 16, 50];
+
+// let findNumbers = (value) => {
+//     if(value % 2 === 0)
+//     return value;
+// } 
+
+// let finalNumber = numbers.find(findNumbers);
+// console.log(finalNumber);
+
+// const numbers = [133, 122, 11, 14, 150, 44, 22, 33,];
+
+// const findNumber = (value) => {
+//     if(value % 3 === 0)
+//     return value;
+// }
+
+// const finalOutput1 = numbers.find(findNumber);
+// const finalOutput2 = numbers.findIndex(findNumber);
+
+// console.log(finalOutput1);
+// console.log(finalOutput2);
+
+const studentInfo = [
+    {
+        id : 101,
+        gpa : 3.33
+    },
+    {
+        id : 102,
+        gpa : 2.55
+    },
+    {
+        id : 103,
+        gpa : 4.11
+    },
+    {
+        id : 104,
+        gpa : 4.50
+    }
+]
+
+console.log(studentInfo.find(x => x.gpa>4));
