@@ -382,3 +382,24 @@
 //console.log(message.startsWith('Today'));
 //console.log(message.endsWith('saturday'));
 //console.log(message.includes('is'));
+
+// import {text, setText} from '/js/myModule.js';
+// console.log(text);
+
+// setText('Good Bye Bangladesh');
+// console.log(text);
+
+// class studentInfo {
+//     constructor(id, name){
+//         this.id = id,
+//         this.name = name;
+//     }
+// }
+
+// const student1 = new studentInfo(101, 'Ibrahim');
+// console.log(student1);
+
+// const student2 = new studentInfo(102, 'Ohid');
+// console.log(student2);
+// console.log(student2.id);
+// console.log(student2.name);
