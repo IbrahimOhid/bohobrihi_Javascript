@@ -2093,3 +2093,16 @@ olItem.className = "React";
 //             pasteText.value = text;
 //         })
 // }
+
+// const bulb = document.querySelector('#bulb');
+
+// const on = document.querySelector('#on');
+// const off = document.querySelector('#off');
+
+// on.addEventListener('click', onButton = () => {
+//     bulb.src = '/img/bulbon.gif';
+// })
+
+// off.addEventListener('click', ofButton = () => {
+//     bulb.src = '/img/bulboff.gif';
+// })

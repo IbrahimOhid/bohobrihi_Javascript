@@ -355,23 +355,30 @@
 // console.log(finalOutput1);
 // console.log(finalOutput2);
 
-const studentInfo = [
-    {
-        id : 101,
-        gpa : 3.33
-    },
-    {
-        id : 102,
-        gpa : 2.55
-    },
-    {
-        id : 103,
-        gpa : 4.11
-    },
-    {
-        id : 104,
-        gpa : 4.50
-    }
-]
+// const studentInfo = [
+//     {
+//         id : 101,
+//         gpa : 3.33
+//     },
+//     {
+//         id : 102,
+//         gpa : 2.55
+//     },
+//     {
+//         id : 103,
+//         gpa : 4.11
+//     },
+//     {
+//         id : 104,
+//         gpa : 4.50
+//     }
+// ]
 
-console.log(studentInfo.find(x => x.gpa>4));
+// console.log(studentInfo.find(x => x.gpa>4));
+
+//string methods *//
+
+//const message = 'Today is saturday';
+//console.log(message.startsWith('Today'));
+//console.log(message.endsWith('saturday'));
+//console.log(message.includes('is'));
