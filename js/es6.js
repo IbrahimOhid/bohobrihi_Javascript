@@ -443,8 +443,21 @@
 //     });
 // });
 
-console.log('Hi');
-document.querySelector('button').addEventListener('click', () =>  {
-    console.log('Button Clicked');
-})
-console.log('Bye');
+// console.log('Hi');
+// document.querySelector('button').addEventListener('click', () =>  {
+//     console.log('Button Clicked');
+// })
+// console.log('Bye');
+
+// function num(a,b, callback){
+//     console.log(`${a} and ${b} : ${a + b}`);
+//     callback();
+// }
+// num(5, 11, () => console.log('Added'));
+
+function hello(){
+    console.log('Hello Bangladesh');
+}
+
+setTimeout(hello, 3000);
+console.log('Pakistan');
