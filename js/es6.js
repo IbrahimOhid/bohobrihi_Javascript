@@ -404,32 +404,47 @@
 // console.log(student2.id);
 // console.log(student2.name);
 
-const taskOne = () => {
-    console.log('Task1');
-}
+// const taskOne = (callback) => {
+//     console.log('Task1');
+//     callback();
+// }
 
-const dataLoading = () => {
-    console.log('Task2 Data Loading');
-}
+// const taskTwo = (callback) => {
+//     setTimeout(() => {
+//         console.log('Data Loading');
+//         callback()
+//     }, 2000);
+// }
 
-const taskTwo = () => {
-    setTimeout(dataLoading, 1000);
-}
+// const taskThree = (callback) => {
+//     console.log('Task3');
+//     callback();
+// }
 
-const taskThree = () => {
-    console.log('Task3');
-}
+// const taskFour = (callback) => {
+//     console.log('Task4');
+//     callback();
+// }
 
-const taskFour = () => {
-    console.log('Task4');
-}
+// const taskFive = (callback) => {
+//     console.log('Task5');
+//     callback();
+// }
 
-const taskFive = () => {
-    console.log('Task5');
-}
+// taskOne(() => {
+//     taskTwo(() => {
+//         taskThree(() => {
+//             taskFour(() => {
+//                 taskFive(() => {
 
-taskOne();
-taskTwo();
-taskThree();
-taskFour();
-taskFive();
+//                 });
+//             });
+//         });
+//     });
+// });
+
+console.log('Hi');
+document.querySelector('button').addEventListener('click', () =>  {
+    console.log('Button Clicked');
+})
+console.log('Bye');
