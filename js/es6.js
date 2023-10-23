@@ -455,9 +455,38 @@
 // }
 // num(5, 11, () => console.log('Added'));
 
-function hello(){
-    console.log('Hello Bangladesh');
-}
+// function hello(){
+//     console.log('Hello Bangladesh');
+// }
 
-setTimeout(hello, 3000);
-console.log('Pakistan');
+// setTimeout(hello, 3000);
+// console.log('Pakistan');
+
+// function square(x){
+//     console.log(`Square of ${x} : ${x*x}`);
+// }
+// // square(10)
+// // const y = square;
+// // y(3)
+
+// function higherOrderFunction(num, callback){
+//     callback(num);
+// }
+// higherOrderFunction(7, square);
+
+//Promise
+
+const promise2 = new Promise((resolve, reject)=>{
+    resolve('Hello');
+})
+
+const promise1 = new Promise((resolve, reject)=>{
+    const rightPromise = true;
+    if(rightPromise){
+        resolve('Right');
+    }else{
+        reject('Wrong');
+    }
+});
+
+Promise.all([promise1, promise2]).then((res)=> console.log(res))
