@@ -476,17 +476,17 @@
 
 //Promise
 
-const promise2 = new Promise((resolve, reject)=>{
-    resolve('Hello');
-})
+// const promise2 = new Promise((resolve, reject)=>{
+//     resolve('Hello');
+// })
 
-const promise1 = new Promise((resolve, reject)=>{
-    const rightPromise = true;
-    if(rightPromise){
-        resolve('Right');
-    }else{
-        reject('Wrong');
-    }
-});
+// const promise1 = new Promise((resolve, reject)=>{
+//     const rightPromise = true;
+//     if(rightPromise){
+//         resolve('Right');
+//     }else{
+//         reject('Wrong');
+//     }
+// });
 
-Promise.all([promise1, promise2]).then((res)=> console.log(res))
+// Promise.all([promise1, promise2]).then((res)=> console.log(res))
