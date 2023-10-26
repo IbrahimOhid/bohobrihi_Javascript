@@ -490,3 +490,32 @@
 // });
 
 // Promise.all([promise1, promise2]).then((res)=> console.log(res))
+
+console.log('Hello');
+
+const taskOne = () => new Promise((resolve, reject) => {
+    resolve('Task 1 Completed');
+})
+const taskTwo = () => new Promise((resolve, reject) => {
+    setTimeout(() => {
+        resolve('Task 2 Completed');
+    }, 2000)
+})
+const taskThree = () => new Promise((resolve, reject) => {
+    reject('Task 3 not Completed');
+})
+const taskFour = () => new Promise((resolve, reject) => {
+    resolve('Task 4 Completed');
+})
+
+taskOne()
+.then((res) => console.log(res))
+.then(taskTwo)
+.then((res) => console.log(res))
+.then(taskThree)
+.then((res) => console.log(res))
+.then(taskFour)
+.then((res) => console.log(res))
+.catch((err) => console.log(err))
+
+console.log('Bye');
