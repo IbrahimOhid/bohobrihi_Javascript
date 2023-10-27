@@ -10,7 +10,7 @@
     box-sizing: border-box;
   }
   
-  .container {
+  /* .container {
     background: #d3efdf;
     padding: 25px;
     max-width: 760px;
@@ -92,4 +92,7 @@
     color: white;
     border: 0px;
     padding: 3px 5px;
+  } */
+  #transaction-area{
+    display: none;
   }

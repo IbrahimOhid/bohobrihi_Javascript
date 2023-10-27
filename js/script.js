@@ -2156,3 +2156,14 @@ olItem.className = "React";
 //     context.drawImage(video,0,0,500, 500);
 // })
 
+
+const form = document.querySelector('#form');
+const enterBtn = document.querySelector('#enterBtn');
+const transactionArea = document.querySelector('#transaction-area')
+
+enterBtn.addEventListener('click', (e) => {
+    e.preventDefault();
+    form.style.display = 'none';
+    transactionArea.style.display = 'block';
+
+})
