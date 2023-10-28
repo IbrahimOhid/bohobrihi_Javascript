@@ -2157,13 +2157,39 @@ olItem.className = "React";
 // })
 
 
-const form = document.querySelector('#form');
-const enterBtn = document.querySelector('#enterBtn');
-const transactionArea = document.querySelector('#transaction-area')
+const totalDepositAmount = document.querySelector('#totalDepositAmount');
+const depositValue = document.querySelector('#depositValue');
+const depositBtn = document.querySelector('#depositBtn');
 
-enterBtn.addEventListener('click', (e) => {
-    e.preventDefault();
-    form.style.display = 'none';
-    transactionArea.style.display = 'block';
+const totalBalanceAmount = document.querySelector('#totalBalanceAmount');
+const balanceValue = document.querySelector('#balanceValue');
+const balanceBtn = document.querySelector('#balanceBtn');
 
+const totalWithdrawAmount = document.querySelector('#totalWithdrawAmount');
+const withdrawValue = document.querySelector('#withdrawValue');
+const withdrawBtn = document.querySelector('#withdrawBtn');
+
+//Deposit & Balance Event Handler
+
+depositBtn.addEventListener('click', () => {
+    const depositAmount = parseFloat(depositValue.value);
+    const currentDeposit = parseFloat(totalDepositAmount.innerText);
+    const totalDeposit = depositAmount + currentDeposit;
+    totalDepositAmount.innerText = totalDeposit;
+    depositValue.value = '';
+
+    const balanceAmount = parseFloat(totalBalanceAmount.innerText);
+    const totalBalance = depositAmount + balanceAmount;
+    totalBalanceAmount.innerText = totalBalance;
+})
+
+//Withdraw button event handler
+
+withdrawBtn.addEventListener('click', () => {
+    const withdrawAmount = parseFloat(withdrawValue.value);
+    const currentWithdraw = parseFloat(totalWithdrawAmount.innerText);
+    const totalWithdraw = withdrawAmount + currentWithdraw;
+    totalWithdrawAmount.innerText = totalWithdraw;
+
+    withdrawValue.value = '';
 })
