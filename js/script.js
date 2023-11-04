@@ -2203,4 +2203,14 @@ olItem.className = "React";
 
 
 //Shopping cart desing
+const nutBtn = document.querySelector('#nut-btn');
+const nutCard = document.querySelector('#nut-card');
+const nutRemove = document.querySelector('#nut-remove');
 
+nutBtn.addEventListener('click', () => {
+    nutCard.style.display = 'block';
+})
+
+nutRemove.addEventListener('click', () => {
+    nutCard.remove();
+})
