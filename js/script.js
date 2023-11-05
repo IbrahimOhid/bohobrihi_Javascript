@@ -2207,10 +2207,44 @@ const nutBtn = document.querySelector('#nut-btn');
 const nutCard = document.querySelector('#nut-card');
 const nutRemove = document.querySelector('#nut-remove');
 
+
+
+function nut (remove){
+    if(remove == true){
+        nutCard.style.display = 'block';
+    }else if(remove == false){
+        nutCard.remove();
+    }
+}
+
 nutBtn.addEventListener('click', () => {
-    nutCard.style.display = 'block';
+    nut(true);
+
 })
 
 nutRemove.addEventListener('click', () => {
-    nutCard.remove();
+    nut(false);
 })
+
+const honeyNutBtn = document.querySelector('#honey-nut-btn');
+const honeyNutCard = document.querySelector('#honey-nut-card');
+const honeyNutRemove = document.querySelector('#honey-nut-card');
+
+function honeyNut (remove){
+    if(remove == true){
+        honeyNutCard.style.display = 'block';
+    }else if(remove == false){
+        honeyNutCard.remove();
+    }
+}
+
+honeyNutBtn.addEventListener('click', () => {
+    honeyNut(true);
+})
+
+honeyNutRemove.addEventListener('click', () => {
+    honeyNut(false);
+})
+
+
+
