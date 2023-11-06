@@ -2176,15 +2176,15 @@ olItem.className = "React";
 //     totalDeposit.innerText = totalDepositAmount.toFixed(2);
 //     depositInput.value = '';
 
-    
+
 //     const currentBalance = parseFloat(totalBalance.innerText);
 //     const totalBalanceAmount = depositAmount + currentBalance;
 //     totalBalance.innerText = totalBalanceAmount.toFixed(2);
 
-    
-    
 
-    
+
+
+
 // })
 
 
@@ -2203,48 +2203,80 @@ olItem.className = "React";
 
 
 //Shopping cart desing
-const nutBtn = document.querySelector('#nut-btn');
-const nutCard = document.querySelector('#nut-card');
-const nutRemove = document.querySelector('#nut-remove');
+// const nutBtn = document.querySelector('#nut-btn');
+// const nutCard = document.querySelector('#nut-card');
+// const nutRemove = document.querySelector('#nut-remove');
 
 
 
-function nut (remove){
-    if(remove == true){
-        nutCard.style.display = 'block';
-    }else if(remove == false){
-        nutCard.remove();
-    }
+// function nut (remove){
+//     if(remove == true){
+//         nutCard.style.display = 'block';
+//     }else if(remove == false){
+//         nutCard.remove();
+//     }
+// }
+
+// nutBtn.addEventListener('click', () => {
+//     nut(true);
+
+// })
+
+// nutRemove.addEventListener('click', () => {
+//     nut(false);
+// })
+
+// const honeyNutBtn = document.querySelector('#honey-nut-btn');
+// const honeyNutCard = document.querySelector('#honey-nut-card');
+// const honeyNutRemove = document.querySelector('#honey-nut-card');
+
+// function honeyNut (remove){
+//     if(remove == true){
+//         honeyNutCard.style.display = 'block';
+//     }else if(remove == false){
+//         honeyNutCard.remove();
+//     }
+// }
+
+// honeyNutBtn.addEventListener('click', () => {
+//     honeyNut(true);
+// })
+
+// honeyNutRemove.addEventListener('click', () => {
+//     honeyNut(false);
+// })
+
+//Reg Exp 
+function validate() {
+    const Email = document.querySelector('#email').value;
+    const PhoneNumber = document.querySelector('#phone-number').value;
+    const PostCode = document.querySelector('#post-code').value;
+
+    const emailRGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+   const phoneRGEX = /(^(\+88|0088)?(01){1}[3456789]{1}(\d){8})$/;
+  const postRGEX =  /^\d{4}$/;
+
+  const emailResult = emailRGEX.test(Email);
+  const phoneResut = phoneRGEX.test(PhoneNumber);
+  const postResult = postRGEX.test(PostCode);
+
+  if(emailResult == false){
+    alert('Email Invalid')
+    return false;
+  }
+
+  if(phoneResut == false){
+    alert('Phone Number Invalid')
+    return false;
+  }
+
+  if(postResult == false){
+    alert('Post Code Invalid')
+    return false;
+  }
+  alert('Valid');
+    return true;
+  
+  form.submit();
 }
-
-nutBtn.addEventListener('click', () => {
-    nut(true);
-
-})
-
-nutRemove.addEventListener('click', () => {
-    nut(false);
-})
-
-const honeyNutBtn = document.querySelector('#honey-nut-btn');
-const honeyNutCard = document.querySelector('#honey-nut-card');
-const honeyNutRemove = document.querySelector('#honey-nut-card');
-
-function honeyNut (remove){
-    if(remove == true){
-        honeyNutCard.style.display = 'block';
-    }else if(remove == false){
-        honeyNutCard.remove();
-    }
-}
-
-honeyNutBtn.addEventListener('click', () => {
-    honeyNut(true);
-})
-
-honeyNutRemove.addEventListener('click', () => {
-    honeyNut(false);
-})
-
-
 

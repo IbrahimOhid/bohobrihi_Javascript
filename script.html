@@ -78,7 +78,7 @@
         </div>
     </div> -->
 
-    <section>
+    <!-- <section>
         <div class="container py-5">
             <h2 class="text-center  text-danger text-decoration-underline">Products List</h2>
             <div class="row row-cols-1 row-cols-md-4 g-4 py-3">
@@ -144,8 +144,24 @@
               </div>
             </div>
             </div>
-    </section>
+    </section> -->
 
+
+    <form class="container py-3 rounded-lg mt-5 bg-secondary" onsubmit="validate()">
+      <div class="mb-3">
+        <label  class="form-label text-white font-weight-bolder">Email address</label>
+        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="username@gmail.com">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label text-white font-weight-bolder">Phone Number</label>
+        <input type="text" class="form-control" id="phone-number" placeholder="+8801000000000">
+      </div>
+      <div class="mb-3">
+        <label  class="form-label text-white font-weight-bolder">Post Code</label>
+        <input type="text" class="form-control" id="post-code" placeholder="1234">
+      </div>
+      <button type="submit" class="btn btn-danger font-weight-bolder">Submit</button>
+    </form>
 
 
 
