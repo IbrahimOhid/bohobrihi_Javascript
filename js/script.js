@@ -2247,36 +2247,38 @@ olItem.className = "React";
 // })
 
 //Reg Exp 
-function validate() {
-    const Email = document.querySelector('#email').value;
-    const PhoneNumber = document.querySelector('#phone-number').value;
-    const PostCode = document.querySelector('#post-code').value;
+// function validate() {
+//     const Email = document.querySelector('#email').value;
+//     const PhoneNumber = document.querySelector('#phone-number').value;
+//     const PostCode = document.querySelector('#post-code').value;
 
-    const emailRGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-   const phoneRGEX = /(^(\+88|0088)?(01){1}[3456789]{1}(\d){8})$/;
-  const postRGEX =  /^\d{4}$/;
+//     const emailRGEX = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+//    const phoneRGEX = /(^(\+88|0088)?(01){1}[3456789]{1}(\d){8})$/;
+//   const postRGEX =  /^\d{4}$/;
 
-  const emailResult = emailRGEX.test(Email);
-  const phoneResut = phoneRGEX.test(PhoneNumber);
-  const postResult = postRGEX.test(PostCode);
+//   const emailResult = emailRGEX.test(Email);
+//   const phoneResut = phoneRGEX.test(PhoneNumber);
+//   const postResult = postRGEX.test(PostCode);
 
-  if(emailResult == false){
-    alert('Email Invalid')
-    return false;
-  }
+//   if(emailResult == false){
+//     alert('Email Invalid')
+//     return false;
+//   }
 
-  if(phoneResut == false){
-    alert('Phone Number Invalid')
-    return false;
-  }
+//   if(phoneResut == false){
+//     alert('Phone Number Invalid')
+//     return false;
+//   }
 
-  if(postResult == false){
-    alert('Post Code Invalid')
-    return false;
-  }
-  alert('Valid');
-    return true;
+//   if(postResult == false){
+//     alert('Post Code Invalid')
+//     return false;
+//   }
+//   alert('All Input Valided 😊');
+//     return true;
   
-  form.submit();
-}
+//   form.submit();
+// }
+
+
 
