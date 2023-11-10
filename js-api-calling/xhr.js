@@ -2,9 +2,9 @@
 //property ➡ response,responseText,responseType,responseURL,status, statusText  
 //function ➡ open, send, sendRequestHeader()
 
-const getData = () => {
+const makeRequest = (method, url) => {
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts');
+    xhr.open(method, url);
     xhr.onload = () => {
         const data = xhr.response;
         console.log(JSON.parse(data));
@@ -13,5 +13,9 @@ const getData = () => {
         console.log("Error is Here");
     }
     xhr.send();
+}
+
+const getData = () => {
+    makeRequest('GET', 'https://jsonplaceholder.typicode.com/posts');
 }
 getData();
