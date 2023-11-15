@@ -2298,11 +2298,28 @@ olItem.className = "React";
 //     }
 // }
 
-fetch('https://jsonplaceholder.typicode.com/posts/1', {
-  method: 'DELETE',
+// fetch('https://jsonplaceholder.typicode.com/posts/1', {
+//   method: 'DELETE',
   
-})
-.then((res) => res.json())
-.then((res) => console.log(res))
-.catch((err) => console.log(err))
+// })
+// .then((res) => res.json())
+// .then((res) => console.log(res))
+// .catch((err) => console.log(err))
+
+const makeRequest = async (url) => {
+    const res = await fetch(url);
+    if(!res.ok){
+        const message = `Error: ${res.status}`;
+        throw new Error(message);
+    }
+    const data = await res.json();
+    return data;
+}
+
+const getData = async () => {
+    makeRequest('https://jsonplaceholder.typicode.com/posts')
+    .then((res) => console.log(res))
+    .catch((err) => console.log(err))
+}
+getData();
 
