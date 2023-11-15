@@ -2282,20 +2282,27 @@ olItem.className = "React";
 
 //Animated Counter Number
 
-const Project = document.querySelector('#project-number');
-const Client = document.querySelector('#client-number');
-const Achieve = document.querySelector('#achieve-number');
+// const Project = document.querySelector('#project-number');
+// const Client = document.querySelector('#client-number');
+// const Achieve = document.querySelector('#achieve-number');
  
 
-const project = setInterval(projectDone, 10);
-let count = 1;
+// const project = setInterval(projectDone, 10);
+// let count = 1;
 
-function projectDone(){
-    count++;
-    document.querySelector('#project-number').innerHTML = count;
-    if(count == 500){
-        clearInterval(project);
-    }
-}
+// function projectDone(){
+//     count++;
+//     document.querySelector('#project-number').innerHTML = count;
+//     if(count == 500){
+//         clearInterval(project);
+//     }
+// }
 
+fetch('https://jsonplaceholder.typicode.com/posts/1', {
+  method: 'DELETE',
+  
+})
+.then((res) => res.json())
+.then((res) => console.log(res))
+.catch((err) => console.log(err))
 
