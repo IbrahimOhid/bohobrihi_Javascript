@@ -2306,20 +2306,25 @@ olItem.className = "React";
 // .then((res) => console.log(res))
 // .catch((err) => console.log(err))
 
-const makeRequest = async (url) => {
-    const res = await fetch(url);
-    if(!res.ok){
-        const message = `Error: ${res.status}`;
-        throw new Error(message);
-    }
-    const data = await res.json();
-    return data;
-}
+// const makeRequest = async (url) => {
+//     const res = await fetch(url);
+//     if(!res.ok){
+//         const message = `Error: ${res.status}`;
+//         throw new Error(message);
+//     }
+//     const data = await res.json();
+//     return data;
+// }
 
-const getData = async () => {
-    makeRequest('https://jsonplaceholder.typicode.com/posts')
-    .then((res) => console.log(res))
-    .catch((err) => console.log(err))
-}
-getData();
+// const getData = async () => {
+//     makeRequest('https://jsonplaceholder.typicode.com/posts')
+//     .then((res) => console.log(res))
+//     .catch((err) => console.log(err))
+// }
+// getData();
+
+axios.get('https://jsonplaceholder.typicode.com/posts')
+.then((res) => console.log(res.data))
+
+.catch((err) => console.log(err))
 
