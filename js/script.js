@@ -2323,8 +2323,68 @@ olItem.className = "React";
 // }
 // getData();
 
-axios.get('https://jsonplaceholder.typicode.com/posts')
-.then((res) => console.log(res.data))
+// axios.get('https://jsonplaceholder.typicode.com/posts')
+// .then((res) => console.log(res.data))
 
-.catch((err) => console.log(err))
+// .catch((err) => console.log(err))
 
+// Local Storage 
+
+// console.log(localStorage);
+
+// setItm(key, value)
+
+// localStorage.setItem("UserName", "Mohammad Ibrahim");
+// localStorage.setItem("Password", "*23844((((###");
+
+// getItem(key)
+
+// const USERNAME = localStorage.getItem("UserName");
+// const PASSWORD = localStorage.getItem("Password");
+// console.log(USERNAME,  PASSWORD);
+
+// localStorage.setItem("UserName", "Ebna Osman");
+// localStorage.setItem("Password", "*23844((((###");
+
+// removeItem(key)
+
+// localStorage.removeItem("UserName");
+// localStorage.removeItem("Password");
+
+
+// localStorage.setItem("userId", "101");
+// localStorage.setItem("user_Password", "##$$$@@@A123");
+
+// const UserID = localStorage.getItem("userId");
+// const User_Pass = localStorage.getItem("user_Password");
+// console.log(UserID, User_Pass);
+
+// localStorage.removeItem("userId");
+// localStorage.removeItem("user_Password");
+
+// const coutries = ["Bangladesh", "Pakistan", "Afganistan"];
+// localStorage.setItem("Country", JSON.stringify(coutries));
+
+// const coutryList = JSON.parse(localStorage.getItem("Country"));
+// console.log(coutryList);
+
+// localStorage.clear();
+
+// session storage
+
+// sessionStorage.setItem("user1", "Ohid");
+// sessionStorage.setItem("user2", "rifa");
+
+// const user_get = sessionStorage.getItem("user");
+// console.log(user_get);
+
+// sessionStorage.removeItem("user");
+// sessionStorage.clear()
+
+const countries = ["Bangladesh", "Pakistan", "Afganistan"];
+sessionStorage.setItem("countryName", JSON.stringify(countries));
+
+// const countryList = JSON.parse(sessionStorage.getItem("countryName"));
+// console.log(countryList);
+
+sessionStorage.clear()
